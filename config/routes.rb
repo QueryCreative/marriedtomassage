@@ -1,14 +1,9 @@
 Rails.application.routes.draw do
-  get 'about_pages/why-netrality'
-
+  root 'main_pages#home'
+  get 'about_pages/why_netrality'
   get 'about_pages/leadership'
-
   get 'about_pages/colocation'
-
-  get 'main_pages/home'
-
   get 'main_pages/customers'
-
   get 'main_pages/contact'
 
   # The priority is based upon order of creation: first created -> highest priority.

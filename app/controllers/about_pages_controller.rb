@@ -1,5 +1,5 @@
 class AboutPagesController < ApplicationController
-  def why-netrality
+  def why_netrality
   end
 
   def leadership

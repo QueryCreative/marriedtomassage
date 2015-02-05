@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class AboutPagesControllerTest < ActionController::TestCase
-  test "should get why-netrality" do
-    get :why-netrality
+  test "should get why_netrality" do
+    get :why_netrality
     assert_response :success
   end
 
