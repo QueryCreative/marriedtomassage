@@ -1,11 +1,34 @@
 Rails.application.routes.draw do
-  root 'main_pages#home'
-  get 'about_pages/why_netrality'
-  get 'about_pages/leadership'
-  get 'about_pages/colocation'
-  get 'main_pages/customers'
-  get 'main_pages/contact'
+  resources :blogposts
+  resources :newsposts
+  resources :users
 
+  root 'main_pages#home'
+
+  get 'why_netrality' => 'about_pages/why_netrality'
+  get 'leadership' => 'about_pages/leadership'
+  get 'colocation' => 'about_pages/colocation'
+
+  get 'locations' => 'location_pages/locations'
+  get 'chicago' => 'location_pages/chicago'
+  get 'houston' => 'location_pages/houston'
+  get 'kansas_city' => 'location_pages/kansas_city'
+  get 'new_york' => 'location_pages/new_york'
+  get 'philadelphia' => 'location_pages/philadelphia'
+
+  get 'customers' => 'customer_pages/customers'
+  get 'ecosystems' => 'customer_pages/ecosystems'
+  get 'customer_portal' => 'customer_pages/customer_portal'
+
+  get 'news' => 'post_pages/news' #change to index of newsposts?
+  get 'blog' => 'post_pages/blog' #change to index of blog posts?
+
+  get 'contact' =>  'main_pages/contact'
+
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

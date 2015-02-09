@@ -1,0 +1,2 @@
+module LocationPagesHelper
+end
