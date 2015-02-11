@@ -1,0 +1,10 @@
+%p#notice= notice
+%p
+  %strong Content:
+  = @newspost.content
+%p
+  %strong User:
+  = @newspost.user_id
+= link_to 'Edit', edit_newspost_path(@newspost)
+|
+= link_to 'Back', newsposts_path

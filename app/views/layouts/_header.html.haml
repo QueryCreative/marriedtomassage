@@ -1,0 +1,30 @@
+%header.clearfix{:role => "banner"}
+  .logo
+    = link_to "Home", root_path, id: "logo"
+  %nav.main
+    %ul
+      %li.dropdown
+        = link_to "About", '#'
+        %ul.secondary
+          %li= link_to "Why Netrality", why_netrality_path
+          %li= link_to "Leadership", leadership_path
+          %li= link_to "Colocation", colocation_path
+      %li.dropdown
+        = link_to "Locations", locations_path
+        %ul.secondary
+          %li= link_to "Chicago", chicago_path
+          %li= link_to "Houston", houston_path
+          %li= link_to "Kansas City", kansas_city_path
+          %li= link_to "New York", new_york_path
+          %li= link_to "Philadelphia", philadelphia_path
+      %li.dropdown
+        = link_to "Customers", customers_path
+        %ul.secondary
+          %li= link_to "Ecosystems", ecosystems_path
+          %li= link_to "Customer Portal | Coming Soon", "#", class: "gray-out"
+          %li= link_to "Clients | Coming Soon", "#", class: "gray-out"
+      %li.dropdown
+        = link_to "News", news_path
+        %ul.secondary
+          %li= link_to "Blog", blog_path
+      %li= link_to "Contact", contact_path

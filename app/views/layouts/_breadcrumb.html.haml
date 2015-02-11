@@ -1,0 +1,40 @@
+-unless @title == 'Home'
+  %header.clear{role: "breadcrumb"}
+    %nav.breadcrumb
+      %h2
+        %span 
+          = link_to "Home", root_path
+        %span »
+        -if @grouping == "Location"
+          %span 
+            = link_to "Locations", locations_path
+          %span »
+          %span= @title
+        -elsif @grouping == "About"
+          %span About
+          %span »
+          %span= @title
+        -elsif @grouping == "Customers"
+          %span 
+            = link_to "Customers", customers_path
+          %span »
+          %span= @title
+        -elsif @grouping == "News"
+          %span 
+            = link_to "News", news_path
+          %span »
+          %span= @title
+        -else
+          %span= @title
+      -if @grouping 
+        %h1.bordered
+          %span 
+            Netrality :
+          %span
+            %a= @title
+      -else
+        %h1
+          %span 
+            Netrality :
+          %span
+            %a= @title
