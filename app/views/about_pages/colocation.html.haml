@@ -1,2 +1,52 @@
-%h1 AboutPages#colocation
-%p Find me in app/views/about_pages/colocation.html.erb
+- @title = "Colocation Services"
+- @grouping = "About"
+%div{id: @title}
+	%section.clearfix{role: "top"}
+		%article.colo-services
+			.clear
+			#about-slider.container-div
+				.slide
+					.pic=image_tag ('data-thumb.jpg')
+					%h3 Connectivity
+					%ul
+						%li Cross Connections at $0 MRC
+						%li Multiple metro dark fiber and long haul transport providers
+						%li Diverse fiber vaults providing multiple building points of entry for network providers
+						%li Diverse fiber risers providing critical redundancy and route diversity for network operators
+						%li Remote Hands Support
+				.slide
+					.pic=image_tag ('electrical-thumb.jpg')
+					%h3 Reliability
+					%ul
+						%li Power/HVAC/Fire Suppression Systems
+						%li N+1 Redundant Cooling Solutions
+						%li N+1 Diesel Generators (w/ 48-72 Hours of Fuel Reserves)
+						%li N+1 UPS Battery Backup
+						%li Pre-action, dry pipe fire suppression or gas-based fire suppression
+				.slide
+					.pic=image_tag ('racks-thumbs.jpg')
+					%h3 Security
+					%ul
+						%li Minimum of Two Security Perimeters 
+						%li Building Entrance
+						%li Colocation Rooms
+						%li Dual Layer Authentication in Colocation Rooms
+						%li Card Key
+						%li Biometrics
+						%li Video Surveillance
+
+				.slide
+					.pic=image_tag ('wall-thumb.jpg')
+					%h3 Services
+					%p Netrality’s services include interconnection at the lowest monthly recurring cost ($0 MRC), installation and remote hands support.
+				.slide
+					.pic=image_tag ('connectivity-thumb.jpg')
+					%h3 IT Cabinets/Racks
+					%p Cabinet/Rack solutions with redundant power and cooling systems are move-in ready and may be easily expanded to accommodate your company’s growth.
+				.slide
+					.pic=image_tag ('cage-thumb.jpg')
+					%h3 Cages
+					%p Custom cage solutions with redundant power and cooling systems offer rapid deployment for customers with larger, defined space, and security needs.
+			.clear
+
+%script{src: "slick/slick-init.js"}

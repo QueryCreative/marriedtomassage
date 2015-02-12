@@ -1,3 +1,73 @@
-- provide(:title, "New york Location")
-%h1 LocationPages#new_york
-%p Find me in app/views/location_pages/new_york.html.erb
+- @title = "New York"
+- @grouping = "Location"
+- @centerLat = 40.726828
+- @centerLng = -74.007677
+- @zoom = 12
+%div{id: @title, role: "city"}
+
+	%section.clearfix{role: "top"}
+		%article.map
+			.map-container
+				#map
+					=image_tag ('location-detail-map.png')
+
+				.container-div.left
+					=image_tag ('325hud-vert.jpg')
+					.button.blue=link_to "325 Hudson Brochure", "325H MMR Postcard 20150109 DM.pdf"
+
+		.clear
+		%article.locale-details
+			%h2.blue.lined Meet Me Room | The Netrality Point at 325 Hudson
+
+			.clear
+			#city-slider.container-div
+				.slide
+					.pic=image_tag ('data-thumb.jpg')
+					%h3 Connectivity
+					%ul
+						%li Carrier-Neutral, building-owned and managed Meet Me Room
+						%li No monthly recurring cross-connect fees
+						%li Direct access to Transatlantic submarine cable systems
+						%li Multiple metro dark fiber and long haul transport providers
+				.slide
+					.pic=image_tag ('data1.png')
+					%h3 Infrastructure
+					%ul
+						%li Diverse North and South fiber entrances from Hudson Street
+						%li Pre-built 1.00" and 1.25" innerducts from ECS tot he Meet Me Room
+						%li 19" 42RU Cabinets or Cage space colocation
+						%li Overhead cable tray management
+						%li Pre-action, dry pipe fire suppression
+						%li Floor load capacity-over 150 lbs./SF live load; 800 lbs./SF cabinet load
+						%li 13' ceiling height
+
+				.slide
+					.pic=image_tag ('electrical-thumb.jpg')
+					%h3 Electrical
+					%ul
+						%li Power density of 75 watts/SF for critical systems capacity in Meet Me Room
+						%li DC Power - Emerson 3400 amp systems in 2N configuration (1 hour battery - full load at 2N)
+						%li UPS - Eaton 275 kVA systems in 2N configuration (9 minute battery - full load 2N)
+						%li Overhead UPS distribution - Starline system allows plug and play breaker installations without shutdowns
+						%li ATS by ASCO - 2000 amp, 480v capacity on the 9th floor with separate utility and generator feeds - 1.5mw diesel generator with 120 hours of fuel reserve
+				.slide
+					.pic=image_tag ('cooling-thumb.jpg')
+					%h3 Cooling
+					%ul
+						%li Liebert XD in-row cooling system with 140 tons of cooling capacity in an N+1 redundant configuration
+						%li In-row coolers use low pressure refrigerant in lieu of chilled water
+						%li All water-based cooling equipment is isolated with in the mechanical room - which also segregates equipment maintenance from the MMr space
+						%li The refrigerant becomes a gas in room conditions resulting in no water leaks
+						%li Hot and cold aisle configuration with hot aisle containment delivering cooling directly to IT equipment load and eliminates air recirculation
+						%li Glycol-based system with N+1 dry coolers located on roof
+				.slide
+					.pic=image_tag ('racks-thumbs.jpg')
+					%h3 Security
+					%ul
+						%li Siemens security system with key card access and video surveillance throughout the space
+						%li Two security perimeters - 24/7 building security and Meet Me Room specific security on-site
+						%li Meet Me Room access is via a man-trap entry vestibule and security station
+						%li 24/7 access to authorized customer personnel via verified access lists
+			.clear
+
+%script{src: "slick/slick-init.js"}

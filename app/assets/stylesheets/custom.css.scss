@@ -29,6 +29,9 @@ html, body {
   line-height: 1;
   background-color: white;
   color: #222;
+  a:hover {
+    background-color: transparent;
+  }
 }
 ol, ul {
   list-style: none;
@@ -171,6 +174,9 @@ pre {
 }
 img { 
   width: 100%;
+}
+a:hover {
+  background-color: transparent;
 }
 .hidden {
   display: none;
@@ -479,6 +485,7 @@ header[role=banner] {
                 &:hover {
                   color: #009bdb;
                   text-decoration: none;
+                  background: transparent;
                 }
               }
             }
@@ -536,11 +543,15 @@ header[role=breadcrumb] {
   nav.breadcrumb {
     padding: 0 15%;
     background-color: transparent;
+    a:hover {
+      background-color: transparent;
+    }
     h2 {
       font-size: 14px;
       color: #585858;
       padding-bottom: 5px;
       border-bottom: 2px solid #eee;
+      margin: .75em 0 0 0;
       span {
         a {
           color: #007dc3;
@@ -619,6 +630,9 @@ footer {
   border-top: 5px solid #999;
   padding: 15px 15%;
   color: white;
+  a:hover {
+    background-color: transparent;
+  }
   a:link {
     color: white;
     text-decoration: none;
@@ -662,6 +676,9 @@ footer {
         a {
             text-decoration: none;
             color: white;
+        }
+        a:hover {
+          background-color: transparent;
         }
       }
       li:first-of-type {

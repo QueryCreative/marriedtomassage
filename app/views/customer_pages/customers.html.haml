@@ -1,3 +1,5 @@
-- provide(:title, "Customers")
-%h1 CustomerPages#customers
-%p Find me in app/views/customer_pages/customers.html.erb
+- @title = "Customers"
+%div{id: @title}
+	.header-image
+		=image_tag ('pano-customers.jpg')
+		.button.blue=link_to 'Customer Portal - Coming Soon', '#' 
