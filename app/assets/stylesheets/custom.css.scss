@@ -230,11 +230,11 @@ img {
 }
 .light {
   background-color: #efefef;
-  background-image: url('/assets/light-bkgd.png');
+  background-image: image-url('light-bkgd.png');
 }
 .blue-bkgd {
   background-color: #0099D8;
-  background-image: url('/assets/blue-bkgd.png');
+  background-image: image-url('blue-bkgd.png');
   color: white;
 }
 .shadowed {
@@ -527,7 +527,7 @@ header[role=banner] {
 		display: block;
 		width: 110px;
 		height: 30px;
-		background: transparent url("/assets/net-logo.png") no-repeat 0 0;
+		background: transparent image-url('net-logo.png') no-repeat 0 0;
 		background-size: 100% auto;
     }
   }
@@ -640,7 +640,7 @@ footer {
 		display: block;
 		width: 110px;
 		height: 30px;
-		background: transparent url("/assets/net-logo-white.png") no-repeat 0 0;
+		background: transparent image-url('net-logo-white.png') no-repeat 0 0;
 		background-size: 100% auto;
     }
   }
@@ -1053,7 +1053,7 @@ div[role=city] {
   .placeholder-for-video {
     width: 100%;
     height: 150px;
-    background: url('/assets/temp/video-placeholder2.png') no-repeat 50% 50%;
+    background: image-url('video-placeholder2.png') no-repeat 50% 50%;
     background-size: 100% auto;
     box-shadow: 0 3px 4px rgba(0,0,0,.3);
   }
@@ -1112,7 +1112,7 @@ div[role=city] {
       }
       &:before {
         content: '';
-        background-image: url('/assets/temp/play-button-01.png');
+        background-image: image-url('play-button-01.png');
         display: block;
         width: 50px;
         height: 50px;
@@ -1124,7 +1124,7 @@ div[role=city] {
 #About, div[role=city] {
   .slider {
     .placeholder-for-video {
-      background: url('/assets/temp/video-placeholder3.jpg') no-repeat 50% 50%;
+      background: image-url('video-placeholder3.jpg') no-repeat 50% 50%;
     }
     .slide {
       .column {
@@ -1195,11 +1195,11 @@ div[role=city] {
     content: "";
   }
  .slick-prev {
-  background-image: url('/assets/left_arrow_grey.png');
+  background-image: image-url('left_arrow_grey.png');
   left: -40px;
  } 
  .slick-next {
-  background-image: url('/assets/right_arrow_grey.png');
+  background-image: image-url('right_arrow_grey.png');
   right: -40px;
  } 
  .slick-prev, .slick-next {
@@ -1254,7 +1254,7 @@ div[role=city] {
   width: 100%;
   height: 100%;
   z-index: 5;
-  /*background: url('/assets/Netrality_2_1_second_delay.gif') 50% 50% no-repeat rgba(255,255,255, 1);*/
+  /*background: image-url('Netrality_2_1_second_delay.gif') 50% 50% no-repeat rgba(255,255,255, 1);*/
   background: rgba(255,255,255, 1);
   #loader-gif {
     position: absolute;
