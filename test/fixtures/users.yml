@@ -4,3 +4,22 @@ tester:
   name: Test User
   email: user@example.com
   password_digest: <%= User.digest('password') %>
+
+michael:
+  name: Michael Hartl
+  email: user1@example.com
+  password_digest: <%= User.digest('password') %>
+  admin: true
+
+joshua:
+  name: Joshua Schmitz
+  email: josh.schmitz@querycreative.net
+  password_digest: <%= User.digest('foobar87') %>
+  admin: true
+
+  <% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>

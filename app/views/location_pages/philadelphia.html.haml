@@ -1,3 +1,70 @@
-- provide(:title, "Philadelphia Location")
-%h1 LocationPages#philadelphia
-%p Find me in app/views/location_pages/philadelphia.html.erb
+- @title = "Philadelphia"
+- @grouping = "Location"
+- @centerLat = 39.959560
+- @centerLng = -75.160838
+- @zoom = 12
+%div{id: @title, role: "city"}
+
+	%section.clearfix{role: "top"}
+		%article.map
+			.map-container
+				#map
+					=image_tag ('location-detail-map.png')
+					
+				.container-div.left
+					=image_tag ('401-philly-vert.jpg')
+					.button.blue=link_to "401 North Broad Brochure", "401 BROAD Postcard 20150109 DM OL.pdf"
+
+		.clear
+		%article.locale-details
+			%h2.blue.lined Meet Me Room | The Netrality Point at 401 North Broad Street 
+
+			.clear
+			#city-slider.container-div				
+				.slide
+					.pic=image_tag ('connect-thumb.jpg')
+					%h3 Connectivity
+					%ul
+						%li Carrier-Neutral, building-owned and managed Meet Me Room
+						%li No monthly recurring cross-connect fees
+						%li Direct access to Transatlantic submarine cable systems
+						%li Multiple metro dark fiber and long haul transport providers
+				.slide
+					.pic=image_tag ('data1.png')
+					%h3 Infrastructure
+					%ul
+						%li Cooling Redundancy N+1
+						%li Redundant Water Service
+						%li Hot/cold aisle configuration
+						%li Smart aisle and team mode CRAC operations
+						%li Internet hotel space for clients
+
+				.slide
+					.pic=image_tag ('electrical-thumb.jpg')
+					%h3 Electrical
+					%ul
+						%li Multiple utility power feeds
+						%li UPS modules expandable to 1200KW
+						%li Generator redundancy N+1
+						%li DC power distribution
+						%li Critical facility monitoring system
+				.slide
+					.pic=image_tag ('401-mmr-thumb.png')
+					%h3 Meet Me Room
+					%ul
+						%li Meet Me Area for connectivity with racks
+						%li Meet Me Room with cabinets and/or caged cabinets
+						%li Redundant fiber pathways to Meet Me Area
+						%li 6 Fiber Points of Entry (POE) to the facility
+						%li POE splice rooms
+				.slide
+					.pic=image_tag ('racks-thumbs.jpg')
+					%h3 Security
+					%ul
+						%li Two security perimeters: 24/7 building security and Meet Me Room specific security on-site
+						%li Key card access throughout the entire facility
+						%li Video surveillance
+						%li 24/7 access to authorized customer personnel via access lists
+			.clear
+
+%script{src: "slick/slick-init.js"}

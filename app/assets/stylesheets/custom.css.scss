@@ -29,6 +29,9 @@ html, body {
   line-height: 1;
   background-color: white;
   color: #222;
+  a:hover {
+    background-color: transparent;
+  }
 }
 ol, ul {
   list-style: none;
@@ -57,7 +60,7 @@ header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 body {
-  color: #333333;
+  color: #58585a;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 100%;
   line-height: 1.2;
@@ -171,6 +174,9 @@ pre {
 }
 img { 
   width: 100%;
+}
+a:hover {
+  background-color: transparent;
 }
 .hidden {
   display: none;
@@ -479,6 +485,7 @@ header[role=banner] {
                 &:hover {
                   color: #009bdb;
                   text-decoration: none;
+                  background: transparent;
                 }
               }
             }
@@ -536,11 +543,15 @@ header[role=breadcrumb] {
   nav.breadcrumb {
     padding: 0 15%;
     background-color: transparent;
+    a:hover {
+      background-color: transparent;
+    }
     h2 {
       font-size: 14px;
       color: #585858;
       padding-bottom: 5px;
       border-bottom: 2px solid #eee;
+      margin: .75em 0 0 0;
       span {
         a {
           color: #007dc3;
@@ -619,6 +630,9 @@ footer {
   border-top: 5px solid #999;
   padding: 15px 15%;
   color: white;
+  a:hover {
+    background-color: transparent;
+  }
   a:link {
     color: white;
     text-decoration: none;
@@ -657,11 +671,22 @@ footer {
   	float: right;
     ul {
       margin: 0;
+      margin-top: 5px;
       list-style-type: none;
       li {
+        display: inline;
+        padding: 0 5px 0 10px;
         a {
             text-decoration: none;
             color: white;
+        }
+        a:hover {
+          background-color: transparent;
+        }
+      }
+      li~li {
+        @media (min-width: 631px) {
+          border-left: 1px solid #fff;
         }
       }
       li:first-of-type {
@@ -1004,6 +1029,8 @@ div[role=city] {
   height: 380px;
   margin: 0 auto;
   padding: 20px 50px;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   @media (max-width: 600px) {
     width: 200px;
     padding: 20px;
@@ -1014,6 +1041,10 @@ div[role=city] {
     height: 15px;
     background: white;
     padding: 10px;
+    font-size: 11px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     &.dropdown{
       height: 40px;
       width: 350px;
@@ -1029,6 +1060,8 @@ div[role=city] {
       color: white;
       margin: 20px 90px;
       background-color: rgba(0, 161, 255, 1);
+      box-sizing: border-box;
+    -webkit-box-sizing: border-box;
       &:hover{
         background-color: rgba(115, 184, 248, 1);
       }
@@ -1282,6 +1315,9 @@ html {
 }
 body {
     margin: 0 0 75px; /* bottom = footer height + 5px border + 10px 'margin' */
+    @media (max-width: 684px) {
+      margin: 0 0 105px;
+    }
 }
 footer {
     position: absolute;
@@ -1289,4 +1325,7 @@ footer {
     bottom: 0;
     height: 60px;
     width: 100%;
+    @media (max-width: 684px) {
+      height: 90px;
+    }
 }

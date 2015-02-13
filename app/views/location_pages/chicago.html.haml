@@ -9,11 +9,11 @@
 		%article.map
 			.map-container
 				#map
-					=image_tag ('/assets/temp/location-detail-map.png')
+					=image_tag ('location-detail-map.png')
 					
 				.container-div.left
 					=image_tag ('717-chicago-vert.png')
-					.button.blue=link_to "717 S Wells Brochure", "/assets/brochure/717southwells Postcard 20150109 DM.pdf"
+					.button.blue=link_to "717 S Wells Brochure", "717southwells Postcard 20150109 DM.pdf"
 
 		.clear
 		%article.locale-details
@@ -29,7 +29,7 @@
 						%li No monthly recurring cross-connect fees
 						%li Multiple metro dark fiber and long haul transport providers
 				.slide
-					.pic=image_tag ('brochure/data1.png')
+					.pic=image_tag ('data1.png')
 					%h3 Infrastructure
 					%ul
 						%li Divers fiber entrances along S Wells Street
@@ -73,4 +73,4 @@
 						%li 24/7 access to authorized customer personnel via verified access lists
 			.clear
 
-%script{src: "/assets/slick/slick-init.js"}
+%script{src: "slick/slick-init.js"}
