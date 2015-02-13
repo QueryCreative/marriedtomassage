@@ -1,3 +1,68 @@
-- provide(:title, "Kansas City Location")
-%h1 LocationPages#kansas_city
-%p Find me in app/views/location_pages/kansas_city.html.erb
+- @title = "Kansas City"
+- @grouping = "Location"
+- @centerLat = 39.100806
+- @centerLng = -94.581167
+- @zoom = 12
+%div{id: @title, role: "city"}
+
+	%section.clearfix{role: "top"}
+		%article.map
+			.map-container
+				#map
+					=image_tag ('location-detail-map.png')
+					
+				.container-div.left
+					=image_tag ('1102-kc-vert.jpg')
+					.button.blue=link_to "1102 Grand Brochure", "1102Grand Postcard 20140109 DM.pdf" 
+
+		.clear
+		%article.locale-details
+			%h2.blue.lined Meet Me Room | The Netrality Point at 1102 Grand Street 
+
+			.clear
+			#city-slider.container-div
+
+				.slide
+					.pic=image_tag ('connect-thumb.jpg')
+					%h3 Connectivity
+					%ul
+						%li Carrier-Neutral, building-owned and managed Meet Me Room
+						%li No monthly recurring cross-connect fees
+						%li Multiple metro dark fiber and long haul transport providers
+				.slide
+					.pic=image_tag ('data1.png')
+					%h3 Infrastructure
+					%ul
+						%li Diverse North and East fiber entrances from 11th Street and Grand Boulevard
+						%li 19” Private 42RU or 20U Cabinets or Cage space colocation
+						%li Overhead cable tray management
+						%li Gas-based fire suppression
+						%li 10 foot ceiling height
+
+				.slide
+					.pic=image_tag ('electrical-thumb.jpg')
+					%h3 Electrical
+					%ul
+						%li Power density of ~5 kW per cabinet for critical systems capacity in colocation rooms
+						%li Multiple UPS – MGE 300-600 kVA systems in N+1 configuration 
+						%li ATS with 5 megawatt separate utility feeds
+						%li 3- 3 mW Caterpillar diesel generators
+				.slide
+					.pic=image_tag ('cooling-thumb.jpg')
+					%h3 Cooling
+					%ul
+						%li Liebert  cooling systems with an N+1 redundant configuration
+						%li Mechanical and electrical systems monitoring with web based remote access, paging and email alerts
+						%li 1750 tons of cooling
+						%li Condenser water loop 
+				.slide
+					.pic=image_tag ('racks-thumbs.jpg')
+					%h3 Security
+					%ul
+						%li S2 Netbox security system with key card access and video surveillance throughout the space
+						%li Meet Me Room access is via a man-trap entry vestibule
+						%li Annual SSAE-16 Type 2 audit
+						%li 24/7 access to authorized customer personnel via verified access lists to colocation rooms 
+			.clear
+
+%script{src: "slick/slick-init.js"}
