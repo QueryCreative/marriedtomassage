@@ -1,12 +1,12 @@
 $(function() {
 	window.preloader = new Preloadit({
 		images: [
-			"video-placeholder2.png",
-			"building-home.jpg",
-			"pano1.jpg",
-			"history-wall.jpg",
-			"datacenter.jpg",
-			"map-img.png"
+			"/assets/video-placeholder2.png",
+			"/assets/building-home.jpg",
+			"/assets/pano1.jpg",
+			"/assets/history-wall.jpg",
+			"/assets/datacenter.jpg",
+			"/assets/map-img.png"
 		], 
 		onComplete: function(){
 			$("#loader").delay(3200).fadeOut(1000);

@@ -1,10 +1,13 @@
-%p#notice= notice
-%p
-  %strong Name:
-  = @user.name
-%p
-  %strong Email:
-  = @user.email
-= link_to 'Edit', edit_user_path(@user)
-|
-= link_to 'Back', users_path
+- @title = @user.name
+.row
+  .col-md-6.col-md-offset-3
+    %p#notice= notice
+    %p
+      %strong Name:
+      = @user.name
+    %p
+      %strong Email:
+      = @user.email
+    = link_to 'Edit', edit_user_path(@user)
+    |
+    = link_to 'Back', users_path
