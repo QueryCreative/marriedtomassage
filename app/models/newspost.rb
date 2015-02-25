@@ -1,6 +1,6 @@
 class Newspost < ActiveRecord::Base
   validates :content, presence: true
-  belongs_to :player
+  belongs_to :user
   #has_paper_trail
 
   rails_admin do
