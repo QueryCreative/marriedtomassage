@@ -1,5 +1,11 @@
 class Newspost < ActiveRecord::Base
-	belongs_to :user
-	validates :content, presence: true
-	has_paper_trail
+  validates :content, presence: true
+  belongs_to :user
+  #has_paper_trail
+
+  rails_admin do
+    configure :user do
+      label 'Author of this Post: '
+    end
+  end
 end

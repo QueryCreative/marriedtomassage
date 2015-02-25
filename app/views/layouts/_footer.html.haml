@@ -9,7 +9,7 @@
         %li= link_to "Profile", current_user
         %li= link_to "Settings", edit_user_path(current_user)
         %li= link_to "Users", users_path
-        %li= link_to "Admin", '#'
-        %li= link_to "Log out", logout_path, method: :delete
+        %li= link_to "Admin", '/admin'
+        %li= link_to "Log out", destroy_user_session_path, method: :delete
       - else
-        %li= link_to "Log in", login_path
+        %li= link_to "Log in", new_user_session_path
