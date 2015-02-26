@@ -1,6 +1,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin box-size-border { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 /** fonts = Arvo, Helvetica Neue **/
@@ -391,7 +405,9 @@ section[role=top] {
   padding-top: 0;
 }
 section[role=intro]{
-  padding: 1em 0 1em 5%;
+  padding: 0 7%;
+  background-color: #333;
+  color: #fff;
 }
 article {
   > h2 {
@@ -579,44 +595,22 @@ header[role=breadcrumb] {
   }
 }
 .intro {
+  .container-div {
+    width: 100%;
+    width: 86%;
+  }
   h1 {
     font-size: 20px;
   }
-  .intro-pic {
-    width: 220px;
-    margin-left: 0;
-    @media (min-width: 850px) {
-      margin-left: 30%;
+  .col3 {
+    height: auto;
+    p {
+      font-size: 10px;
+      line-height: 1.4;
     }
-  }
-  .left {
-    max-width: 47.5%;
-    min-width: 220px;
-    @media (max-width: 665px) {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-  .left:first-of-type {
-    margin-right: 15%;
-    @media (max-width: 850px) {
-      margin-right: 5%;
-    }
-    @media (max-width: 665px) {
-      margin-right: 0;
-    }
-  }
-  .left + .left {
-    margin-left: 0;
-    padding-top: 0;
-    h1 {
-      margin: 0 0 0.75em 0;
-    }
-  }
-  .logo {
-    width: 110px;
   }
 }
+
 .divider-image, .header-image {
   clear: both;
   width: 100%;
@@ -625,6 +619,7 @@ header[role=breadcrumb] {
     box-shadow: 0 3px 4px rgba(0,0,0,.3);
   }
 }
+
 footer {
   background-color: #00a1ff;
   border-top: 5px solid #999;
@@ -710,6 +705,7 @@ footer {
     }
   }
 }
+
 /**** section specific styles ****/
 #Locations {
   .container-div {
@@ -934,7 +930,7 @@ div[role=city] {
   }
   .post {
     border-bottom: 1px solid #ccc;
-    margin-bottom: 1em;
+    margin-bottom: 1e m;
     h1 {
       margin: 1em 0 0 0;
       font-size: 18px;
@@ -1045,14 +1041,36 @@ div[role=city] {
   }
 }
 /** slider stuff **/
-.slider {
+.slider, .storyboard {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 960px) and (max-width: 1200px) {
+    width: 86%;
+  }
   /* change as needed once properly/fully built */
   .placeholder-for-video {
     width: 100%;
-    height: 150px;
-    background: image-url('video-placeholder2.png') no-repeat 50% 50%;
-    background-size: 100% auto;
+    padding: 0 10%;
+    background: image-url('midtown_manhattan.jpg') no-repeat 50% 50%;
+    /*background-size: 100% auto;*/
+    background-size: cover;
     box-shadow: 0 3px 4px rgba(0,0,0,.3);
+    
+    @media (min-width: 1201px) {
+      height: 315px;
+    }
+    @media (min-width: 970px) and (max-width: 1200px) {
+      height: 185px;
+    }
+    @media (max-width: 969px) {
+      height: 210px;
+    }
+    @media (max-width: 768px) {
+      height: 130px;
+    }
+    @media (max-width: 480px) {
+      height: 40vh;
+    }
   }
   .slide {
     h1 {
@@ -1099,22 +1117,14 @@ div[role=city] {
       color: rgba(30,110,150,1);
     }
     .play-button {
-      display: none; /* todo */
-      margin-top: 20px;
-      a {
-        font-size: 13px;
-        color: white;
-        text-decoration: none;
-        font-family: 'Arvo', Arvo, Georgia, Times, serif;
-      }
-      &:before {
-        content: '';
-        background-image: image-url('play-button-01.png');
-        display: block;
-        width: 50px;
-        height: 50px;
-        margin: 0 auto;
-      }
+      @include vertical-align;
+      background-image: image-url('play-video.png');
+      display: block;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto;
+      font-size: 0;
+      color: transparent;
     } 
   }
 }
@@ -1242,6 +1252,41 @@ div[role=city] {
 }
 .full {
   width: 100%;
+}
+
+.col3 {
+  @media (min-width: 1048px) {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+    @include box-size-border;
+    &.with-type {
+      padding: 1em;
+    }
+  }
+  @media (max-width: 1047px) {
+    width: 50%;
+    display: block;
+    float: left;
+    @include box-size-border;
+    &.with-type {
+      width: 100%;
+      padding: 1em;
+    }
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    @include box-size-border;
+    &.with-type {
+      padding: 1em;
+    }
+  }
+}
+
+.mobilenoshow {
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 /** loading gif **/
 #loader {
