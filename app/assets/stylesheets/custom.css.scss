@@ -930,7 +930,7 @@ div[role=city] {
   }
   .post {
     border-bottom: 1px solid #ccc;
-    margin-bottom: 1e m;
+    margin-bottom: 1em;
     h1 {
       margin: 1em 0 0 0;
       font-size: 18px;
@@ -1288,6 +1288,11 @@ div[role=city] {
     display: none;
   }
 }
+
+.flexy {
+
+}
+
 /** loading gif **/
 #loader {
   position: fixed;
