@@ -1064,9 +1064,10 @@ div[role=city] {
 .slider, .storyboard {
   width: 100%;
   margin: 0 auto;
-  @media (min-width: 960px) and (max-width: 1200px) {
+  /*@media (min-width: 970px) and (max-width: 1200px) {
     width: 86%;
-  }
+  }*/
+  
   /* change as needed once properly/fully built */
   .placeholder-for-video {
     width: 100%;
@@ -1075,12 +1076,9 @@ div[role=city] {
     /*background-size: 100% auto;*/
     background-size: cover;
     box-shadow: 0 3px 4px rgba(0,0,0,.3);
-    
-    @media (min-width: 1201px) {
-      height: 315px;
-    }
-    @media (min-width: 970px) and (max-width: 1200px) {
-      height: 185px;
+
+    @media (min-width: 970px) {
+      height: 365px;
     }
     @media (max-width: 969px) {
       height: 210px;
