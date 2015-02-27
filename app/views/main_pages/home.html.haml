@@ -1,5 +1,13 @@
 - @title = "Home"
 
+:css
+  html {
+    background-color: #333;
+  }
+  section[role=main]{
+    background-color: #fff;
+  }
+
 %div{id: @title}
   %section.clearfix{role: "main"}
     %article.slider.clearfix
@@ -9,12 +17,12 @@
 
   %section.clearfix{role: "intro"}
     %article.intro
-      .container-div
-        .col3.mobilenoshow.flexy
+      .flex-container
+        .flex-item.mobilenoshow
           =image_tag ('fiber-fp.jpg')
-        .col3.mobilenoshow.flexy
+        .flex-item.mobilenoshow
           =image_tag ('325-hudson-fp.jpg')
-        .col3.with-type.flexy
+        .flex-item.with-type
           %h1 
             %span
               %i What makes a 
