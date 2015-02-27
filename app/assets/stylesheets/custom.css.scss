@@ -811,7 +811,7 @@ div[role=city] {
   vertical-align: top;
   @media (max-width: 665px){
     width: 80%;
-    margin: 0 10%;
+    margin: 1em 10%;
   }
   .person-thumb, .client-thumb {
     width: 35%;
@@ -850,11 +850,22 @@ div[role=city] {
     margin: 1em 0 0 0;
   }
 }
-@media (min-width: 900px){
+@media (min-width: 951px){
   .card:nth-of-type(2n){
     margin-left: 5%;
   }
 }
+@media screen and (min-width: 666px) and (max-width: 950px){
+  .card{
+    display: inline-block;
+    margin-bottom: 1em;
+    width: 35%;
+    min-width: 200px;
+    vertical-align: top;
+    margin-left: 12%;
+  }
+}
+
 .leader {
   margin: 1em auto;
   width: 100%;
