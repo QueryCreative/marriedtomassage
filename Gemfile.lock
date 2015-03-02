@@ -53,6 +53,13 @@ GEM
     cancan (1.6.10)
     celluloid (0.16.0)
       timers (~> 4.0.0)
+    ckeditor (4.1.1)
+      cocaine
+      orm_adapter (~> 0.5.0)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.7)
+      climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -275,6 +282,7 @@ DEPENDENCIES
   bootstrap-will_paginate (= 0.0.10)
   byebug (= 3.4.0)
   cancan
+  ckeditor
   coffee-rails (= 4.1.0)
   devise
   erb2haml

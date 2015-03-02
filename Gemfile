@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails',                '4.2.0'
 gem 'rails_admin'
+gem 'ckeditor'
 gem 'cancan'
 gem 'devise'
 gem 'bcrypt',               '3.1.7'
