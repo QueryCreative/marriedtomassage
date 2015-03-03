@@ -4,7 +4,8 @@ class NewspostsController < ApplicationController
   # GET /newsposts
   # GET /newsposts.json
   def index
-    @newsposts = Newspost.all
+    @newsPosts = Newspost.order('published_at DESC').page params[:page]
+    @recentPosts = Newspost.order('published_at DESC').take(4)
   end
 
   # GET /newsposts/1

@@ -4,8 +4,6 @@
   %nav.tertiary
     %ul
       - if logged_in?
-        %li= link_to "Edit News", '#'
-        %li= link_to "Edit Blog", '#'
         %li= link_to "Profile", current_user
         %li= link_to "Settings", edit_user_path(current_user)
         - if current_user && current_user.admin?

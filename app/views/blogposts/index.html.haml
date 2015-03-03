@@ -1,18 +1,28 @@
-%p#notice= notice
-%h1 Listing Blogposts
-%table
-  %thead
-    %tr
-      %th Content
-      %th User
-      %th{:colspan => "3"}
-  %tbody
-    - @blogposts.each do |blogpost|
-      %tr
-        %td= blogpost.content
-        %td= blogpost.user_id
-        %td= link_to 'Show', blogpost
-        %td= link_to 'Edit', edit_blogpost_path(blogpost)
-        %td= link_to 'Destroy', blogpost, method: :delete, data: { confirm: 'Are you sure?' }
-%br/
-= link_to 'New Blogpost', new_blogpost_path
+- provide(:title, 'Blog')
+#News
+  %section.clearfix{role: "top"}
+    %article
+      .two-column.left
+        
+        - @blogposts.each do |blogpost|
+          .post
+            %h2= blogpost.title
+            %span.dateline= blogpost.published_at
+            = blogpost.content.html_safe
+            %p= link_to 'Read More »', blogpost.external_link, class: 'read-more link-blue', :target => "_blank"
+        =paginate @blogposts
+
+      .column 
+        .module
+          %h3 Recent Posts
+          %ul.recent-news
+            %li= link_to 'Amerimar Enterprises Acquires...', 'http://newswire.telecomramblings.com/2014/10/amerimar-enterprises-acquires-717-south-wells-street-key-telecom-carrier-hotel-chicago/'
+            %li= link_to 'New Owners for Philadelphia...', 'http://www.datacenterknowledge.com/archives/2014/03/06/new-owners-philadelphia-carrier-hotel-401-north-broad/'
+            %li= link_to '1102 Grand Sells...', 'http://www.bizjournals.com/kansascity/news/2012/10/23/1102-grand-sells-to-hunter-newby.html'
+            %li= link_to 'New Data Hub Being Developed...', 'http://www.datacenterknowledge.com/archives/2012/10/22/new-data-hub-being-developed-in-manhattan/'
+        
+        .module
+          %h3 Press Releases
+          %ul.press-releases
+            %li=link_to 'PR - Jan 16, 2015 Netrality Properties Launch', 'http://www.marketwired.com/press-release/amerimar-enterprises-inc-hunter-newby-are-proud-announce-launch-netrality-properties-1983621.htm'
+            %li=link_to 'PR - Jan 16, 2015 Announcing Launch of Netrality', 'http://www.telecomramblings.com/2015/01/amerimar-hunter-newby-launch-netrality/?utm_source=dlvr.it&utm_medium=twitter&utm_campaign=telcoramblings'
