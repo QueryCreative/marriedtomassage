@@ -22,8 +22,8 @@ Rails.application.routes.draw do
   get 'ecosystems' => 'customer_pages#ecosystems'
   get 'customer_portal' => 'customer_pages#customer_portal'
 
-  get 'news' => 'post_pages#news' #change to index of newsposts?
-  get 'blog' => 'post_pages#blog' #change to index of blog posts?
+  get 'news' => 'newsposts#index' #change to index of newsposts?
+  get 'blog' => 'blogposts#index' #change to index of blog posts?
 
   get 'contact' =>  'main_pages#contact'
   

@@ -1,3 +1,115 @@
 // Place all the styles related to the Newsposts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: 20px 0;
+	border-radius: 4px;
+
+	a {
+		position: relative;
+		float: left;
+		padding: 6px 12px;
+		line-height: 1.4;
+		text-decoration: none;
+		border: 1px solid #00a1ff;
+		border-right-width: 0;
+		z-index: 2;
+		color: #00a1ff;
+		background-color: #fff;
+		cursor: default;
+	}
+
+	.current {
+		position: relative;
+		float: left;
+		padding: 6px 12px;
+		line-height: 1.4;
+		text-decoration: none;
+		border: 1px solid #00a1ff;
+		border-right-width: 0;
+		z-index: 2;
+		color: #fff;
+		background-color: #00a1ff;
+		cursor: default;
+	}
+
+	a:visited {
+		color: #00a1ff;
+	}
+
+	a:hover,
+	a:focus {
+		z-index: 2;
+		color: #fff;
+		background-color: #00a1ff;
+		border-color: #00a1ff;
+		cursor: default;
+	}
+
+	span:first-child,
+	span:first-child > a {
+		margin-left: 0;
+		border-bottom-left-radius: 4px;
+		border-top-left-radius: 4px;
+	}
+
+	span:last-child,
+	span:last-child > a {
+		border-bottom-right-radius: 4px;
+		border-top-right-radius: 4px;
+		border-right-width: 1px;
+	}
+
+	.first,
+	.prev,
+	.next,
+	.last {
+
+	}
+}
+
+//for truncation and clamping
+$trunc-font-size: 16px;
+$trunc-line-height: 1.2;
+$trunc-lines-to-show: 3;
+$clamp-font-size: 15px;
+$clamp-line-height: 1.4;
+$clamp-lines-to-show: 4;
+
+.truncated {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: $trunc-font-size*$trunc-line-height*$trunc-lines-to-show+11.6px;
+  font-size: $trunc-font-size;
+  line-height: $trunc-line-height;
+  -webkit-line-clamp: $trunc-lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clamped {
+  > *{
+    display: none;
+    line-height: $clamp-line-height;
+  	font-size: $clamp-font-size;
+    &:first-child {
+      display: block;
+      display: -webkit-box;
+      max-width: 100%;
+      -webkit-line-clamp: $clamp-lines-to-show;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &.expanded {
+    > * {
+      display: block;
+    }
+  }
+}
