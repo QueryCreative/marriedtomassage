@@ -4,7 +4,8 @@ class BlogpostsController < ApplicationController
   # GET /blogposts
   # GET /blogposts.json
   def index
-    @blogposts = Blogpost.order('published_at DESC').page params[:page]
+    @blogPosts = Blogpost.order('published_at DESC').page params[:page]
+    @recentBlogs = Blogpost.order('published_at DESC').take(4)
   end
 
   # GET /blogposts/1
