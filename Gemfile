@@ -26,6 +26,8 @@ gem 'capistrano-rvm'
 gem 'capistrano-rails'
 gem 'capistrano-passenger'
 
+gem 'slick_rails'
+
 group :development, :test do
   gem "erb2haml"
   gem 'haml-rails', '>= 0.3.4'
