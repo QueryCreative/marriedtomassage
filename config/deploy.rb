@@ -25,7 +25,7 @@ set :deploy_to, '/home/multiproductionadmin/netrality'
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 set :linked_dirs, %w{log tmp/pids tmp/sockets tmp/cache tmp/sockets vendor/bundle public/system public/assets}
 
 
