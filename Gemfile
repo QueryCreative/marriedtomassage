@@ -20,6 +20,14 @@ gem 'jbuilder',             '2.2.3'
 # gem 'paper_trail', '~> 4.0.0.beta'
 gem 'sdoc',                 '0.4.0', group: :doc
 
+# deployment
+gem 'capistrano'
+gem 'capistrano-rvm'
+gem 'capistrano-rails'
+gem 'capistrano-passenger'
+
+gem 'slick_rails'
+
 group :development, :test do
   gem "erb2haml"
   gem 'haml-rails', '>= 0.3.4'
