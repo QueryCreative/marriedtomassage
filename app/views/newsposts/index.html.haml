@@ -6,7 +6,7 @@
         
         - @newsPosts.each do |newsPost|
           .post
-            %h2= newsPost.title
+            %h1= newsPost.title
             %span.dateline= newsPost.published_at
             .truncated
               = newsPost.content.html_safe
