@@ -17,9 +17,13 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 # property set. Specify the username and a domain or IP for the server.
 # Don't use `:all`, it's a meta role.
 
-role :app, %w{multiproductionadmin@netrality.the42.com}
-role :web, %w{multiproductionadmin@netrality.the42.com}
-role :db, %w{multiproductionadmin@netrality.the42.com}
+# role :app, %w{multiproductionadmin@netrality.the42.com}
+# role :web, %w{multiproductionadmin@netrality.the42.com}
+# role :db, %w{multiproductionadmin@netrality.the42.com}
+
+role :app, %w{admin@marriedtomessage.com}
+role :web, %w{admin@marriedtomessage.com}
+role :db, %w{admin@marriedtomessage.com}
 
 set :rails_env, 'production'
 

@@ -1,10 +1,10 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'netonrails'
-set :repo_url, 'git@bitbucket.org:42dev/netonrails.git'
+set :application, 'm2m'
+set :repo_url, 'git@bitbucket.org:js42/m2m.git'
 
-set :deploy_to, '/home/multiproductionadmin/netrality'
+set :deploy_to, '/marriedtomassage.com'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
