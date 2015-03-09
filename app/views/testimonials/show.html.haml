@@ -1,0 +1,10 @@
+%p#notice= notice
+%p
+  %strong Content:
+  = @testimonials.content
+%p
+  %strong User:
+  = @testimonials.user_id
+= link_to 'Edit', edit_testimonials_path(@testimonials)
+|
+= link_to 'Back', testimonials_path

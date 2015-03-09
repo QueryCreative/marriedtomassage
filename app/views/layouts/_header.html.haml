@@ -3,9 +3,13 @@
     = link_to "Home", root_path, id: "logo"
 
   .menu
-    .social_media_links
+    .social-media-links
       %ul
-        %li = link_to
+        %li= link_to "Facebook", "#", title: "facebook"
+        %li= link_to "Twitter", "#", title: "twitter"
+        %li= link_to "Pinterest", "#", title: "pinterest"
+        %li= link_to "Linkedin", "#", title: "linkedin"
+        %li= link_to "Google+", "#", title: "googleplus"
 
     .call
       %span 
@@ -32,8 +36,7 @@
           %ul.secondary
             %li= link_to "Venue", venue_path
             %li= link_to "Reservation", reservation_path
-        %li.dropdown
+        %li
           = link_to "Announcements", announcements_path
-          %ul.secondary
-            %li= link_to "filler", '#'
-        %li= link_to "Contact", contact_path
+        %li
+          = link_to "Contact", contact_path

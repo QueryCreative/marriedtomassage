@@ -1,0 +1,20 @@
+- provide(:title, 'Announcements')
+#News#Announcements
+  %section.clearfix{role: "top"}
+    %article
+      .two-column.left
+        
+        - @announcements.each do |announcement|
+          .post
+            %h1= announcement.title
+            %span.dateline= announcement.published_at
+            .truncated
+              = announcement.content.html_safe
+            %p= link_to 'Read More »', announcement.external_link, class: 'read-more link-blue', :target => "_blank"
+        =paginate @announcements
+
+      .column 
+        .module
+          %h3 Press Releases
+          %ul.press-releases
+            %li=link_to 'PR','#'
