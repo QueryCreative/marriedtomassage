@@ -18,5 +18,5 @@ After that, your server is good to go.  Boot it up with:
 
 	rails s
 
-You can now begin developing just as you would with rails views. The server is accessible on `localhost:3000` by default. 
+You can now begin developing just as you would with rails views. The server is accessible on `localhost:4400` by default. 
 
