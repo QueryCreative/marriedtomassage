@@ -1,29 +1,27 @@
 Rails.application.routes.draw do
   devise_for :users
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :blogposts
+  resources :announcements
+  resources :testimonials
   resources :newsposts
   resources :users
 
   root 'main_pages#home'
 
-  get 'why_netrality' => 'about_pages#why_netrality'
-  get 'leadership' => 'about_pages#leadership'
-  get 'colocation' => 'about_pages#colocation'
+  get 'about' => 'about_pages#about'
+  get 'yleo' => 'about_pages#yleo'
+  get 'guest_book' => 'about_pages#guest_book'
 
-  get 'locations' => 'location_pages#locations'
-  get 'chicago' => 'location_pages#chicago'
-  get 'houston' => 'location_pages#houston'
-  get 'kansas_city' => 'location_pages#kansas_city'
-  get 'new_york' => 'location_pages#new_york'
-  get 'philadelphia' => 'location_pages#philadelphia'
+  get 'menu' => 'menu_pages#menu'
+  get 'specials' => 'menu_pages#specials'
+  get 'gift_certificates' => 'menu_pages#gift_certificates'
 
-  get 'customers' => 'customer_pages#customers'
-  get 'ecosystems' => 'customer_pages#ecosystems'
-  get 'customer_portal' => 'customer_pages#customer_portal'
+  get 'schedule' => 'menu_pages#schedule'
+  get 'venue' => 'menu_pages#venue'
+  get 'reservation' => 'menu_pages#reservation'
 
-  get 'news' => 'newsposts#index' #change to index of newsposts?
-  get 'blog' => 'blogposts#index' #change to index of blog posts?
+  get 'announcements' => 'announcements#index'
+  get 'testimonials' => 'testimonials#index'
 
   get 'contact' =>  'main_pages#contact'
   

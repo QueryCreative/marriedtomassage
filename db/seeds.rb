@@ -1,22 +1,16 @@
 User.create!(name:  "Joshua Schmitz",
              email: "josh.schmitz@querycreative.net",
-             password:              "foobar87",
-             password_confirmation: "foobar87",
+             password:              "Beezer87",
+             password_confirmation: "Beezer87",
              admin: true)
 
-User.create!(name:  "JS",
-             email: "js@the42.com",
-             password:              "foobar87",
-             password_confirmation: "foobar87",
+User.create!(name:  "Katrina Snoke",
+             email: "marriedtomassage@gmail.com",
+             password:              "mymomis50",
+             password_confirmation: "mymomis50",
              admin: true)
 
-User.create!(name:  "Example User",
-             email: "example@railstutorial.org",
-             password:              "foobar",
-             password_confirmation: "foobar",
-             admin: true)
-
-19.times do |n|
+2.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
   password = "password"
