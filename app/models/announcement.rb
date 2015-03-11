@@ -9,7 +9,7 @@ class Announcement < ActiveRecord::Base
 	    edit do
 	    	field :title
 	    	field :published_at
-	    	field :content, :ck_editor
+	    	field :content
 	    	field :external_link
 	    end
 	  end
