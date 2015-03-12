@@ -8,8 +8,9 @@ class Announcement < ActiveRecord::Base
 	  rails_admin do
 	    edit do
 	    	field :title
-	    	field :published_at
 	    	field :content
+	    	field :expires
+	    	field :published_at
 	    	field :external_link
 	    end
 	  end

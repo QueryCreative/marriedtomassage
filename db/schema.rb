@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310214223) do
+ActiveRecord::Schema.define(version: 20150312054006) do
 
   create_table "announcements", force: :cascade do |t|
     t.text     "content"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150310214223) do
     t.string   "title"
     t.string   "external_link"
     t.datetime "published_at"
+    t.datetime "expires"
   end
 
   create_table "newsposts", force: :cascade do |t|
@@ -41,6 +42,8 @@ ActiveRecord::Schema.define(version: 20150310214223) do
     t.string   "title"
     t.string   "external_link"
     t.datetime "published_at"
+    t.string   "name"
+    t.datetime "expires"
   end
 
   create_table "users", force: :cascade do |t|
