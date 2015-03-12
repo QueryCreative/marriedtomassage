@@ -1,13 +1,13 @@
 %footer
-  %span.left
-    To Reserve your appointment utilize our
-    = link_to "Online Scheduler:", "#"
-    or email
+  %span
+    %span.reserve
+      To Reserve your appointment utilize our
+      = link_to "Online Scheduler:", "#"
+      or email
     = link_to "marriedtomassage@gmail.com", "mailto:marriedtomassage@gmail.com"
 
-  %span.right= link_to "Back to Top", "#nav"
-
-  %nav.tertiary.clear
+  %nav.tertiary
+    %span &#124;
     %ul
       - if logged_in?
         %li= link_to "Profile", current_user
@@ -17,3 +17,7 @@
         %li= link_to "Log out", destroy_user_session_path, method: :delete
       - else
         %li= link_to "Log in", new_user_session_path
+    %span &#124;
+
+
+  %span= link_to "Back to Top", "#nav", class: "to-top"

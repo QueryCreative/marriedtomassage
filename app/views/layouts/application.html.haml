@@ -37,8 +37,12 @@
     = render 'layouts/shim'
 
   %body
-    = render 'layouts/header'
-    = yield
-    = render 'layouts/gmaps'
-    = render 'layouts/footer'
+    .wrapper
+      .header
+        = render 'layouts/header'
+      = yield
+      = render 'layouts/gmaps'
+      .push
+    .footer
+      = render 'layouts/footer'
     
