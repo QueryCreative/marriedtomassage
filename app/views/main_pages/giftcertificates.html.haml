@@ -1,19 +1,14 @@
-- @title = "Chicago"
+- @title = "About"
 - @grouping = "Location"
-- @centerLat = 41.872911
-- @centerLng = -87.633270
-- @zoom = 12
-%div{id: @title, role: "city"}
-
+- @centerLat = 38.577521
+- @centerLng = -121.478166
+- @zoom = 10
+%div{id: @title}
 	%section.clearfix{role: "top"}
 		%article.map
 			.map-container
 				#map
 					=image_tag ('location-detail-map.png')
-					
-				.container-div.left
-					=image_tag ('717-chicago-vert.png')
-					.button.blue=link_to "717 S Wells Brochure", "717southwells Postcard 20150109 DM.pdf"
 
 		.clear
 		%article.locale-details

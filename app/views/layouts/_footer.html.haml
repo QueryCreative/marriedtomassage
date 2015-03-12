@@ -4,4 +4,16 @@
     = link_to "Online Scheduler:", "#"
     or email
     = link_to "marriedtomassage@gmail.com", "mailto:marriedtomassage@gmail.com"
+
   %span.right= link_to "Back to Top", "#nav"
+
+  %nav.tertiary.clear
+    %ul
+      - if logged_in?
+        %li= link_to "Profile", current_user
+        %li= link_to "Settings", edit_user_path(current_user)
+        - if current_user && current_user.admin?
+          %li= link_to "Admin", '/admin'
+        %li= link_to "Log out", destroy_user_session_path, method: :delete
+      - else
+        %li= link_to "Log in", new_user_session_path

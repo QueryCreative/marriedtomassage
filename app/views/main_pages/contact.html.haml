@@ -7,39 +7,26 @@
   %section.clearfix
     .contact-links.sans
       Contact us at:
-      =link_to "212-317-1800", "tel:+12123171800", class: "blue"
+      =link_to "916.467.HEAL", "tel:+19164674325"
       or
-      =link_to "info@netralityproperties.com", "mailto:info@netralityproperties.com", class: "blue"
+      =link_to "marriedtomassage@gmail.com", "mailto:marriedtomassage@gmail.com", class: "blue"
 
     .formContainer
-      %form#ss-form{action: "https://docs.google.com/forms/d/1TE2XtXIPrL17yXqf7TW0xjn9YLLN-gzCws8g4_ombCs/formResponse", method: "POST", onsubmit: "", target: "_self"}
-        %ol.ss-question-list{role: "list", style: "padding-left: 0"}
-          .ss-form-question.errorbox-good{role: "listitem"}
-            .ss-item.ss-select{dir: "ltr"}
-              .ss-form-entry
-                %select.input.dropdown{"aria-label" => "Property  ", name: "entry.1757263561"}
-                  %option{value: '', disabled: 'true', selected: 'true'}
-                    Select a Property
-                  %option{value: 'Houston - 1301 Fannin Street'}
-                    Houston - 1301 Fannin Street
-                  %option{value: 'Chicago – 717 South Wells Street'}
-                    Chicago – 717 South Wells Street
-                  %option{value: 'Kansas City – 1102 Grand Street'}
-                    Kansas City – 1102 Grand Street
-                  %option{value: 'New York – 325 Hudson Street'}
-                    New York – 325 Hudson Street
-                  %option{value: 'Philadelphia – 401 North Broad Street'}
-                    Philadelphia – 401 North Broad Street
-          %input.input{dir: "auto", name: "entry.755040036", title: "", type: "text", value: "", placeholder: "Name"}
-          %textarea.input.textarea{cols: "0", dir: "auto", name: "entry.766232422", rows: "8", placeholder: "Comments / Interests"}
-          %input.input{dir: "auto", name: "entry.538566891", title: "", type: "text", value: "", placeholder: "Phone or e-mail"}
-          %input.input.time{dir: "auto", name: "entry.1717695791", title: "", type: "text", value: "", placeholder: "Best time to contact"}
-          %input{name: "draftResponse", type: "hidden", value: "[,,&quot;-7570693890316457757&quot;]\n"}
-            %input{name: "pageHistory", type: "hidden", value: "0"}
-              %input{name: "fbzx", type: "hidden", value: "-7570693890316457757"}
+      %form#ss-form{:action => "https://docs.google.com/forms/d/190zz9BI0dHtKdLwxcLzwrqCGGWkDKvVkJZ_UwvYnXGI/formResponse", :method => "POST", :onsubmit => "", :target => "_self"}
+        %input.input{:dir => "auto", :name => "entry.881739568", :required => "true", :title => "", :type => "text", :value => "",placeholder: "Name"}
+        %input.input{:dir => "auto", :name => "entry.1171236638", :pattern => ".*\\+?\\(?\\d{2,4}\\)?[\\d\\s-]{3,}.*", :required => "true", :title => "", :type => "text", :value => "", placeholder: "Phone"}
+        %input.input{:dir => "auto", :name => "entry.1542968118", :title => "", :type => "email", :value => "", placeholder: "Email"}
+        %input.input.time{"aria-label" => "Best Time to Contact  ", :dir => "auto", :name => "entry.644595172", :type => "time", :value => "", placeholder: "Best time to contact"}
+        %textarea.input.textarea{:cols => "0", :dir => "auto", :name => "entry.1078707660", :rows => "8", placeholder: "Comments / Desired Service"}
+        %input.input.time.date{:dir => "auto", :name => "entry.773980853", :type => "date", :value => "", :placeholder => "Desired Date of Service"}
+          %input{:name => "draftResponse", :type => "hidden", :value => "[,,&quot;7063091679416996761&quot;]\n"}
+            %input{:name => "pageHistory", :type => "hidden", :value => "0"}
+              %input{:name => "fbzx", :type => "hidden", :value => "7063091679416996761"}
                 .ss-item.ss-navigate
                   %table#navigation-table
                     %tbody
                       %tr
-                        %td#navigation-buttons.ss-form-entry.goog-inline-block{dir: "ltr"}
-                          %input#ss-submit.jfk-button.jfk-button-action.input.button{name: "submit", type: "submit", value: "Submit"}
+                        %td#navigation-buttons.ss-form-entry.goog-inline-block{:dir => "ltr"}
+                          %input#ss-submit.jfk-button.jfk-button-action{:name => "submit", :type => "submit", :value => "Submit"}
+                            
+

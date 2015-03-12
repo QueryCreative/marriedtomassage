@@ -8,23 +8,24 @@ Rails.application.routes.draw do
 
   root 'main_pages#home'
 
-  get 'about' => 'about_pages#about'
-  get 'yleo' => 'about_pages#yleo'
-  get 'guest_book' => 'about_pages#guest_book'
+  get 'about' => 'main_pages#about'
+  get 'yleo' => 'main_pages#yleo'
+  get 'guestbook' => 'main_pages#guestbook'
 
-  get 'menu' => 'menu_pages#menu'
-  get 'specials' => 'menu_pages#specials'
-  get 'gift_certificates' => 'menu_pages#gift_certificates'
+  get 'menu' => 'main_pages#menu'
+  get 'specials' => 'main_pages#specials'
+  get 'giftcertificates' => 'main_pages#giftcertificates'
 
-  get 'schedule' => 'menu_pages#schedule'
-  get 'venue' => 'menu_pages#venue'
-  get 'reservation' => 'menu_pages#reservation'
+  get 'schedule' => 'main_pages#schedule'
+  get 'venue' => 'main_pages#venue'
+  get 'reservation' => 'main_pages#reservation'
 
   get 'announcements' => 'announcements#index'
   get 'testimonials' => 'testimonials#index'
 
   get 'contact' =>  'main_pages#contact'
-  
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
