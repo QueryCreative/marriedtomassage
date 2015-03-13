@@ -323,9 +323,9 @@ a, p {
 }
 /*** main styles ***/
 body { 
-  background: #242424 url(background1-small.jpg) no-repeat center fixed;
+  background: #242424 url(asset-path('background1-small.jpg')) no-repeat center fixed;
   @media screen and (min-width: 768px) {
-    background: #242424 url(background1.jpg) no-repeat center fixed;
+    background: #242424 url(asset-path('background1.jpg')) no-repeat center fixed;
   }
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -586,12 +586,11 @@ header {
   		display: block;
   		width: 375px;
   		height: 99px;
-  		background: transparent image-url('logo-white.png') no-repeat 0 0;
+  		background: transparent url(asset-path('logo-white.png')) no-repeat 0 0;
   		background-size: 100% auto;
     }
   }
 }
-
 footer {
   padding: 0 5%;
   padding-top: 15px;
