@@ -376,11 +376,12 @@ figcaption {
 }
 section {
   margin: 0 10%;
-  padding: 2.2em 0;
+  padding: 2.2em;
   background: rgba(255, 255, 255, 0.8);
   color: #242424;
   @media (max-width: 665px) {
     margin: 0 5%;
+    padding: 2.2em 1em;
   }
 }
 
