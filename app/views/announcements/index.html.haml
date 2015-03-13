@@ -6,14 +6,15 @@
         - @announcements.each do |announcement|
           .post
             %h1= announcement.title
-            %span.dateline= announcement.published_at
-            .truncated
+            .announcement
               = announcement.content.html_safe
-            %p= link_to 'Read More »', announcement.external_link, class: 'read-more link-blue', :target => "_blank"
+              -if announcement.external_link
+                %p= link_to 'Read More »', announcement.external_link, class: 'read-more link-blue', :target => "_blank"
+              %span.dateline= announcement.published_at
         =paginate @announcements
 
       .column 
         .module
-          %h3 Press Releases
+          %h3 Previous News 
           %ul.press-releases
-            %li=link_to 'PR','#'
+            %li=link_to '','#'
