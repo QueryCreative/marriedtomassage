@@ -5,8 +5,8 @@
       - @testimonials.each do |testimonials|
         .post
           %h1= testimonials.title
-          %span.dateline= testimonials.published_at
-          .truncated
+          .testimonial 
             = testimonials.content.html_safe
-          .name= testimonials.name
+            .name= testimonials.name
+            %span.dateline= testimonials.published_at
       =paginate @testimonials
