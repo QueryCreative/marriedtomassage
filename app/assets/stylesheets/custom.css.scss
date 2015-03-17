@@ -323,7 +323,7 @@ a, p {
 }
 /*** main styles ***/
 body { 
-  background: #242424 url(asset-path('background1-small.jpg')) no-repeat center fixed;
+  background: #242424 url(asset-path('background1small.jpg')) no-repeat center fixed;
   @media screen and (min-width: 768px) {
     background: #242424 url(asset-path('background1.jpg')) no-repeat center fixed;
   }
@@ -843,14 +843,14 @@ section[role=main]{
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 100%;
+  height: 110%;
   z-index: 5;
   background: rgba(255,255,255, 1);
   #loader-gif {
     position: absolute;
     top: 30%;
-    left: 42%;
-    width: 210px;
+    left: 36%;
+    width: 390px;
     height: auto;
     @media (max-width: 520px) {
       left: 25%;
