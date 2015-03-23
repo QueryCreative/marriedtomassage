@@ -93,11 +93,18 @@ body {
   line-height: 1.2;
 }
 a {
+  color: #ab8ab1;
   .more {
     white-space: nowrap;
     &::after {
       content: " »";
     }
+  }
+}
+p {
+  a {
+    color: #ab8ab1;
+    text-decoration: underline;
   }
 }
 strong, b {
@@ -205,6 +212,9 @@ img {
 a:hover {
   background-color: transparent;
 }
+a:hover, a:focus {
+  color: #ab8ab1;
+}
 .hidden {
   display: none;
 }
@@ -233,6 +243,8 @@ a:hover {
 .white { 
   color: #fff !important;
 }
+.purple {
+  color: #ab8ab1;}
 .gray {
   color: #ccc;
 }
@@ -302,11 +314,13 @@ a, p {
 
 /** button styles **/
 .button {
-  &.blue { /*TODO: change button color*/
+  &.purple { 
     a {
       color: white;
       text-decoration: none;
-      background-color: #0099D8;
+      background-color: #32243a;
+
+      /*TODO: change button color*/
       &:hover{
         background-color: rgba(115, 184, 248, 1);
       }
@@ -433,6 +447,7 @@ header {
           a[title="pinterest"] { background-image: image-url('pinterest-white.png'); }
           a[title="linkedin"]  { background-image: image-url('linked-white.png'); }
           a[title="googleplus"]{ background-image: image-url('googleplus-white.png'); }
+          a[title="yelp"]      { background-image: image-url('yelp-white.png'); }
         }
         li~li {
           margin-left: 6px;
@@ -562,23 +577,7 @@ header {
     color: #ddd;
     text-decoration: none;
   }
-  /*.action-link {
-    position: absolute;
-    right: 15%;
-    top: 55px;
-    a {
-      background: rgba(255, 255, 255, 0.1);
-      -moz-border-radius: 8px;
-      -webkit-border-radius: 8px;
-      border-radius: 8px;
-      display: block;
-      padding: 0.5em 1em;
-      text-shadow: #4b1d09 0 1px 0;
-    }
-    a:after {
-      content: " ⇢";
-    }
-  }*/
+
   .logo {
     float: left;
     #logo {
@@ -665,13 +664,14 @@ html, body {
 
 /**map**/
 .map {
+  width: 47.5%;
   h2 {
     border-bottom: 1px solid #ddd;
   }
   .map-container {
     padding: 0;
     #map {
-      width: 47.5%;
+      width: 100%;
       min-width: 280px;
       margin-right: 5%;
       margin-bottom: 20px;
@@ -727,7 +727,7 @@ html, body {
       margin: 20px 90px;
       background-color: rgba(0, 161, 255, 1);
       box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
       &:hover{
         background-color: rgba(115, 184, 248, 1);
       }
@@ -849,7 +849,7 @@ section[role=main]{
   #loader-gif {
     position: absolute;
     top: 30%;
-    left: 36%;
+    left: 30%;
     width: 390px;
     height: auto;
     @media (max-width: 520px) {
