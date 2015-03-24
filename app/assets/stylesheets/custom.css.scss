@@ -1043,8 +1043,8 @@ dl.order-bar {
 
 #sthoverbuttonsMain {
   z-index: 4 !important;
-  padding: 1em 0;
-  left: 10px;
+  padding: 1em 0 !important;
+  left: 9px;
   float: none;
   .sthoverbuttons-label {
     color: #fff !important;
