@@ -1,4 +1,4 @@
-- @title = "About"
+- @title = "Menu"
 - @grouping = "Location"
 - @centerLat = 38.577521
 - @centerLng = -121.478166
@@ -6,65 +6,69 @@
 %div{id: @title}
 
 	%section.clearfix{role: "top"}
-		%article.map
-			.map-container
-				#map
-					=image_tag ('location-detail-map.png')
+		%article.clearfix
+			%h1.lined Menu of Massage Services Through Married to Massage
+			.flourish
+				=image_tag ('flouish-light.png')
+			.textblock
+				
+				%h2 90 Minute Total Package Deal
+				%p 
+					Married to Massage provides customized 90 and 60 minute massage packages including Swedish, Shiatsu, Trigger Point and Reflexology modalities for maximum comfort and energy. We employ Aroma and Hydrothermal Therapies with Essential Oils. We offer client-acclaimed massage services to your door in the Sacramento, CA area. Scheduling is a snap and Katrina always has your well-being at the forefront of her mind.
 
-		.clear
-		%article.locale-details
-			%h2.blue.lined Meet Me Room | The Netrality Point at 717 South Wells Street
+				%dl.order-bar
+					%dt.service
+						=link_to "90 Minute Total Package Deal", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+					%dd.price &#36;125
+				%dl.order-bar
+					%dt.service
+						=link_to "90 Minute Total Massage Deal", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+					%dd.price &#36;100
+				%dl.order-bar
+					%dt.service
+						=link_to "60 Minute Total Massage Deal", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+					%dd.price &#36;75
+		%article.more-menu
+			.col-3
+				.service-box
+					.hex-icon
+						=image_tag('candle-hex.png')
+					%h3 Registered for Relaxation
+					%p A concentrated therapy to provide deep muscle pain relief, decrease inflammation and increase circulation. Treatments best suited for Back and Neck, Arms and Hands, and/or Legs and feet.
 
-			.clear
-			#city-slider.container-div
-				.slide
-					.pic=image_tag ('connect-thumb.jpg')
-					%h3 Connectivity
-					%ul
-						%li Carrier-Neutral, building-owned and managed Meet Me Room
-						%li No monthly recurring cross-connect fees
-						%li Multiple metro dark fiber and long haul transport providers
-				.slide
-					.pic=image_tag ('data1.png')
-					%h3 Infrastructure
-					%ul
-						%li Divers fiber entrances along S Wells Street
-						%li Pre-built 1.00” and 1.25” innerducts from carrier entrances to Meet Me Room
-						%li 19" 42RU Cabinets or Cage space colocation
-						%li Overhead cable tray management
-						%li Live load floor capacity of 125 lbs/SF
-						%li Pre-action, dry pipe fire suppression
-						%li VESDA smoke detection system
-						%li 19’-6” column spacing
-						%li 9” thick structural floor slab
-						%li 11’-2” clear height from floor slab to underside of slab above
-						
-				.slide
-					.pic=image_tag ('electrical-thumb.jpg')
-					%h3 Electrical
-					%ul
-						%li Power density of 125 watts/SF for critical systems capacity in Meet Me Room
-						%li UPS – 500 kw systems in 2N configuration (9 minute battery duration)
-						%li Overhead UPS distribution – Starline system allows plug and play breaker installations without shutdowns
-						%li ATS – 1600 amp, 480v capacity on the 6th floor with separate utility and generator feeds
-						%li 1.5mw diesel generator
-				.slide
-					.pic=image_tag ('cooling-thumb.jpg')
-					%h3 Cooling
-					%ul
-						%li Cooling is provided by a Kyoto cooling system with 143.3 tons of total cooling capacity in an N+1 redundant configuration
-						%li The Kyoto cooling system is DX refrigerant based, using an air-to-air transfer technology, the patented KyotoWheel, an energy wheel that provides 90% effectiveness in heat rejection, to maximize the number of free-cooling hours used to cool the data center
-						%li No outside air is introduced through the Kyoto system, reducing outside air contaminates and humidity in the data center
-						%li The Kyoto system is a refrigerant-based system, no chilled or condenser water is used resulting in no water leaks.
-						%li Distribution is via a cold aisle configuration delivering cooling directly to the IT equipment load and reducing air recirculation
-						%li Mechanical and electrical systems monitored with web based remote access, paging and email alerts by building automation system
-						%li Cold Aisle Containment System
-				.slide
-					.pic=image_tag ('racks-thumbs.jpg')
-					%h3 Security
-					%ul
-						%li Siemens security system with key card access and video surveillance throughout the space
-						%li Two security perimeters – 24/7 building security and Meet Me Room specific on-site security
-						%li Meet Me Room access via a man-trap entry vestibule and security station
-						%li 24/7 access to authorized customer personnel via verified access lists
-			.clear
+					%dl.order-bar
+						%dt.service
+							=link_to "90 Minute Focus", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+						%dd.price &#36;120
+					%dl.order-bar
+						%dt.service
+							=link_to "60 Minute Massage", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+						%dd.price &#36;90
+				.service-box
+					.hex-icon
+						=image_tag('diamond-hex.png')
+					%h3 Diamond-Grade Deep-Tissue
+					%p Sports or Medical? Needing deep tissue? Soothe tired and sore muscles as your mind, body and spirit are rejuvenated. This massage incorporates light to medium strokes intended to alleviate stress and increase blood flow.
+
+					%dl.order-bar
+						%dt.service
+							=link_to "90 Minute Focus", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+						%dd.price &#36;120
+					%dl.order-bar
+						%dt.service
+							=link_to "60 Minute Massage", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+						%dd.price &#36;90
+				.service-box
+					.hex-icon
+						=image_tag('stone-hex.png')
+					%h3 Vow to Relax
+					%p Hot Stone Therapy melts away tension, eases muscle stiffness, and increases circulation and metabolism. This session features the placement of smooth basalt stones at key points on the body to allow for relaxsation of the muscles.
+
+					%dl.order-bar
+						%dt.service
+							=link_to "90 Minute Focus", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+						%dd.price &#36;120
+					%dl.order-bar
+						%dt.service
+							=link_to "60 Minute Massage", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+						%dd.price &#36;90
