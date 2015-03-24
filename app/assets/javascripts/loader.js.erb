@@ -6,11 +6,11 @@ $(function() {
 	});
 });
 
-$(document).on("ready", function () {
+$(document).on("ready page:reload", function () {
 	$l = $('#loader-gif');
 	if (!$l.data('original_source')) {
 		$l.data('original_source', $l.attr('source'));
 	}
 	$l.attr('src',$l.attr('src')+"?"+Math.random());
-	$("#loader").delay(3200).fadeOut(1000);
+	$("#loader").delay(3600).fadeOut(1400);
 });
