@@ -1,5 +1,8 @@
 - @title = "Contact"
 
+%script
+  $(function(){ $('input.time').timepicker() })
+
 %div{id: @title}
   %section.clearfix
     .contact-links.sans
@@ -13,7 +16,7 @@
         %input.input{:dir => "auto", :name => "entry.881739568", :required => "true", :title => "", :type => "text", :value => "",placeholder: "Name"}
         %input.input{:dir => "auto", :name => "entry.1171236638", :pattern => ".*\\+?\\(?\\d{2,4}\\)?[\\d\\s-]{3,}.*", :required => "true", :title => "", :type => "text", :value => "", placeholder: "Phone"}
         %input.input{:dir => "auto", :name => "entry.1542968118", :title => "", :type => "email", :value => "", placeholder: "Email"}
-        -# %input.input.time{"aria-label" => "Best Time to Contact  ", :dir => "auto", :name => "entry.644595172", :type => "time", :value => "", placeholder: "Best time to contact"}
+        %input.input.time{dir: "auto", name: "entry.1717695791", title: "", type: "text", value: "", placeholder: "Best time to contact"}
         %textarea.input.textarea{:cols => "0", :dir => "auto", :name => "entry.1078707660", :rows => "8", placeholder: "Comments / Desired Service"}
         %input.input.time.date{:dir => "auto", :name => "entry.773980853", :type => "date", :value => "", :placeholder => "Desired Date of Service"}
           %input{:name => "draftResponse", :type => "hidden", :value => "[,,&quot;7063091679416996761&quot;]\n"}

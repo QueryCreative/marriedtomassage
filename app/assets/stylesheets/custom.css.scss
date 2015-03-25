@@ -391,7 +391,7 @@ figcaption {
 section {
   margin: 0 10%;
   padding: 2.2em;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   color: #242424;
   @media (max-width: 665px) {
     margin: 0 5%;
@@ -799,6 +799,11 @@ html, body {
       }
     }
   }
+}
+
+.contact-links {
+  text-align: center;
+  margin: 1em auto;
 }
 
 /**** columns layout ****/
