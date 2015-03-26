@@ -1070,7 +1070,7 @@ dl.order-bar {
   z-index: 4 !important;
   padding: 1em 0 !important;
   left: 9px;
-  float: none;
+  float: none !important;
   .sthoverbuttons-label {
     color: #fff !important;
   }
