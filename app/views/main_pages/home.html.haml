@@ -1,31 +1,28 @@
 - @title = "Home"
-
 #loader
   = image_tag ('logo-gif.gif'), id: "loader-gif"
 
 %div{id: @title}
   %section.clearfix{role: "main"}
-    %article.intro
-      .flex-container
-        .flex-item.mobilenoshow
-          =image_tag ('portrait.jpeg')
-        .flex-item.with-type
-          %h1 
-            %span
-              %i When in Pain 
-            %br
-            Trust Married To Massage
-          %p We are committed to your health and well-being. We use the most vetted techniques to loosen sore muscles, sooth pinched nerves, calm inflamed joints and bring you back to your peak.
-
-        .flex-item
-          %h2
-            Pain Management: 
-          %p TMJ, Sciatica, headaches, stress relief, 
-          %h2= link_to "Signature Service:", menu_path 
-          %p 
-            Vow to Relax with hot stones, aromatherapy utilizing therapeutic-grade essential oils, deep tissue and sports massage in the heart of Midtown Sacramento, CA, with  convenient,
-            = link_to "Online Scheduling.", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
-    %article.home-text
+    %article.intro.clearfix
+      .item.mobilenoshow
+        =image_tag ('portrait.jpeg')
+      .item.text-box
+        %h1
+          %span
+            %i When in Pain 
+          %br
+          Trust Married To Massage
+        %p We are committed to your health and well-being. We use the most vetted techniques to loosen sore muscles, sooth pinched nerves, calm inflamed joints and bring you back to your peak.
+      .item.text-box
+        %h2
+          Pain Management: 
+        %p TMJ, Sciatica, headaches, stress relief, 
+        %h2= link_to "Signature Service:", menu_path 
+        %p 
+          Vow to Relax with hot stones, aromatherapy utilizing therapeutic-grade essential oils, deep tissue and sports massage in the heart of Midtown Sacramento, CA, with  convenient,
+          = link_to "Online Scheduling.", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
+    %article.home-text.clearfix
       %h2 Put Your Faith in Married to Massage
       %p We are here to offer you pain relief, increased range of motion and relaxation with the customer service you deserve!  
       %p
