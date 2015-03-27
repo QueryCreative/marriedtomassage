@@ -1,3 +1,24 @@
 // Place all the styles related to the announcements controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#Announcements {
+  section {
+    padding: 0;
+    background: transparent;
+    article {
+      .post {
+        background-color: rgba(240, 240, 240, .85);
+        border-left: 10px solid #aaa;
+        padding: 1em;
+        .dateline {
+          font-size: 10px;
+          font-style: italic;
+        }
+      }
+      .post ~ .post {
+        border-top: 3px solid #aaa;
+      }
+    }
+  }
+}

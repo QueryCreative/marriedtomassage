@@ -23,6 +23,8 @@ Rails.application.routes.draw do
   get 'announcements' => 'announcements#index'
   get 'testimonials' => 'testimonials#index'
 
+  get 'news' => 'newsposts#index' 
+
   get 'contact' =>  'main_pages#contact'
 
 

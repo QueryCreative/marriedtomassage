@@ -2,26 +2,13 @@
 #News
   %section.clearfix{role: "top"}
     %article
-      .two-column.left
-        
-        - @newsPosts.each do |newsPost|
-          .post
-            %h1= newsPost.title
-            %span.dateline= newsPost.published_at
-            .truncated
-              = newsPost.content.html_safe
-            %p= link_to 'Read More »', newsPost.external_link, class: 'read-more link-blue', :target => "_blank"
-        =paginate @newsPosts
-
-      .column 
-        .module
-          %h3 Recent News
-          %ul.recent-news
-            - @recentPosts.each do |newsPost|
-              %li= link_to newsPost.title.truncate(32, separator: ' '), newsPost.external_link
-
-        .module
-          %h3 Press Releases
-          %ul.press-releases
-            %li=link_to 'PR - Jan 16, 2015 Netrality Properties Launch', 'http://www.marketwired.com/press-release/amerimar-enterprises-inc-hunter-newby-are-proud-announce-launch-netrality-properties-1983621.htm'
-            %li=link_to 'PR - Jan 16, 2015 Announcing Launch of Netrality', 'http://www.telecomramblings.com/2015/01/amerimar-hunter-newby-launch-netrality/?utm_source=dlvr.it&utm_medium=twitter&utm_campaign=telcoramblings'
+      - @newsPosts.each do |newsPost|
+        .post
+          %h1= newsPost.title
+          .truncated
+            = newsPost.content.html_safe
+          %p= link_to 'Read More »', newsPost.external_link, class: 'link', :target => "_blank"
+          %span.dateline
+            Published
+            = newsPost.published_at
+      =paginate @newsPosts

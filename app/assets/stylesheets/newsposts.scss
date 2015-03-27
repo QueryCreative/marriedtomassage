@@ -83,7 +83,7 @@ $clamp-lines-to-show: 4;
   display: block;
   display: -webkit-box;
   max-width: 100%;
-  height: $trunc-font-size*$trunc-line-height*$trunc-lines-to-show+11.6px;
+  height: $trunc-font-size*$trunc-line-height*$trunc-lines-to-show+4px;
   font-size: $trunc-font-size;
   line-height: $trunc-line-height;
   -webkit-line-clamp: $trunc-lines-to-show;
@@ -110,6 +110,27 @@ $clamp-lines-to-show: 4;
   &.expanded {
     > * {
       display: block;
+    }
+  }
+}
+
+#News {
+  section {
+    padding: 0;
+    background: transparent;
+    article {
+      .post {
+        background-color: rgba(240, 240, 240, .85);
+        border-left: 10px solid #aaa;
+        padding: 1em;
+        .dateline {
+          font-size: 10px;
+          font-style: italic;
+        }
+      }
+      .post ~ .post {
+        border-top: 3px solid #aaa;
+      }
     }
   }
 }

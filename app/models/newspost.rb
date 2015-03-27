@@ -9,7 +9,9 @@ class Newspost < ActiveRecord::Base
 	    edit do
 	    	field :title
 	    	field :published_at
-	    	field :content
+	    	field :content, :wysihtml5 do
+	    		config_options toolbar: { fa: true }
+	    	end
 	    	field :external_link
 	    end
 	  end

@@ -1,3 +1,68 @@
 // Place all the styles related to the testimonials controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#Testimonials {
+  .formContainer {
+    height: 265px;
+  }
+  .column-left {
+      float: none;
+      width: 100%;
+    @media screen and (min-width: 1170px){
+      width: 45%;
+      margin-right: 5%;
+      float: left;
+    }
+  }
+  .column-right {
+      float: none;
+      width: 100%;
+    @media screen and (min-width: 1170px){
+      width: 50%;
+      float: left;
+    }
+  }
+  .post {
+    margin-bottom: 1em;
+    .name {
+      font-variant: italic;
+      color: #3d1151;;
+    }
+    
+    blockquote {
+      background: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 0;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+    }
+    blockquote:before {
+      color: #ccc;
+      content: "\201C";
+      font-size: 48px;
+      font-family: sans-serif;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    blockquote p:after {
+      color: #ccc;
+      content: "\201D";
+      font-size: 48px;
+      font-family: sans-serif;
+      line-height: 0.1em;
+      margin-left: 0.25em;
+      vertical-align: text-bottom;
+    }
+    blockquote p {
+      display: inline;
+      line-height: 1.5;
+      font-size: 18px;
+    }
+    blockquote ~ blockquote {
+      border-top: 2px solid #ccc;
+    }
+  }
+}

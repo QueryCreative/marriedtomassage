@@ -2,19 +2,14 @@
 #News#Announcements
   %section.clearfix{role: "top"}
     %article
-      .two-column.left
-        - @announcements.each do |announcement|
-          .post
-            %h1= announcement.title
-            .announcement
-              = announcement.content.html_safe
-              -if announcement.external_link
-                %p= link_to 'Read More »', announcement.external_link, class: 'read-more link-blue', :target => "_blank"
-              %span.dateline= announcement.published_at
-        =paginate @announcements
-
-      .column 
-        .module
-          %h3 Previous News 
-          %ul.press-releases
-            %li=link_to '','#'
+      - @announcements.each do |announcement|
+        .post
+          %h1= announcement.title
+          .announcement
+            = announcement.content.html_safe
+            -if announcement.external_link
+              %p= link_to 'Read More »', announcement.external_link, class: 'link', :target => "_blank"
+            %span.dateline
+              Published
+              = announcement.published_at
+      =paginate @announcements

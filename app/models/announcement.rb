@@ -9,6 +9,9 @@ class Announcement < ActiveRecord::Base
 	    edit do
 	    	field :title
 	    	field :content
+	    	# field :content, :wysihtml5 do
+	    	# 	config_options toolbar: { fa: true }
+	    	# end
 	    	field :expires
 	    	field :published_at
 	    	field :external_link

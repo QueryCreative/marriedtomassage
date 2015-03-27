@@ -7,6 +7,9 @@ class Testimonial < ActiveRecord::Base
 	  rails_admin do
 	    edit do
 	    	field :content
+	    	# field :content, :wysihtml5 do
+	    	# 	config_options toolbar: { fa: true }
+	    	# end
 	    	field :name
 	    	field :published_at
 	    end

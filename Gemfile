@@ -2,7 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails',                '4.2.0'
 gem 'rails_admin'
-gem 'ckeditor'
+#gem 'ckeditor'
+#gem "non-stupid-digest-assets"
+#gem 'ckeditor_rails'
+gem 'bootstrap-wysihtml5-rails', '~> 0.3.3.6'
 gem 'cancan'
 gem 'devise'
 gem 'kaminari'

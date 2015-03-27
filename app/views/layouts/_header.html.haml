@@ -39,7 +39,9 @@
           %ul.secondary
             %li= link_to "Venue", venue_path
             %li= link_to "Reservation", reservation_path
-        %li
+        %li.dropdown
           = link_to "Announcements", announcements_path
+          %ul.secondary
+            %li= link_to "News", news_path
         %li
           = link_to "Contact", contact_path
