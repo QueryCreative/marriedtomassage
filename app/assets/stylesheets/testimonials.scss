@@ -25,7 +25,9 @@
     }
   }
   .post {
-    margin-bottom: 1em;
+    &:first-of-type {
+      margin-top: 1em;
+    }
     .name {
       font-variant: italic;
       color: #3d1151;;
@@ -61,8 +63,8 @@
       line-height: 1.5;
       font-size: 18px;
     }
-    blockquote ~ blockquote {
-      border-top: 2px solid #ccc;
-    }
+  }
+  .post ~ .post {
+    border-top: 2px solid #ccc;
   }
 }
