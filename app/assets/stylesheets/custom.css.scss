@@ -971,7 +971,7 @@ h1.lined {
   margin-bottom: 0;
 }
 
-#Menu {
+#Menu, #Schedule {
   .flourish {
     float: left;
     width: 32%;
@@ -1069,8 +1069,10 @@ h1.lined {
   }
 }
 
-#Gift_Certificates {
-  
+#GiftCertificates {
+  .spafinder {
+    width: 200px;
+  }
 }
 
 /** service list **/
