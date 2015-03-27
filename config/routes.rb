@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   get 'about' => 'main_pages#about'
   get 'yleo' => 'main_pages#yleo'
   get 'guestbook' => 'main_pages#guestbook'
+  get 'therapists' => 'main_pages#therapists'
 
-  get 'menu' => 'main_pages#menu'
+  get 'services' => 'main_pages#services'
   get 'specials' => 'main_pages#specials'
   get 'giftcertificates' => 'main_pages#giftcertificates'
 

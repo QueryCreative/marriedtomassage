@@ -866,9 +866,11 @@ html, body {
 
 /*** home page ***/
 section[role=main]{
-  padding: 0 5%;
-  @media screen and (max-width: 1024px) {
-    padding: 0;
+  padding: 0;
+  article {
+    @media screen and (max-width: 1024px) {
+      padding: 0;
+    }
   }
   .intro {
     width: 100%;
@@ -883,6 +885,7 @@ section[role=main]{
         width: 48%;
       }
       &.mobilenoshow {
+        width: 30%;
         text-align: center;
         margin: auto;
         margin-top: 1em;
@@ -929,9 +932,9 @@ section[role=main]{
     }
   }
   .home-text {
-    @media (max-width: 1024px) {
-      padding: 0 2em;
-    }
+    background: #ddd;
+    border-top: 5px solid #3d1151;
+    padding: 0 2em;
   }
   .affiliates {
     text-align: center;
@@ -971,7 +974,7 @@ h1.lined {
   margin-bottom: 0;
 }
 
-#Menu, #Schedule {
+#Services, #Schedule {
   .flourish {
     float: left;
     width: 32%;
@@ -1072,6 +1075,15 @@ h1.lined {
 #GiftCertificates {
   .spafinder {
     width: 200px;
+  }
+}
+
+#GuestBook {
+  .guestbook {
+    width: 200px;
+    float: left;
+    margin-right: 5%;
+    img {}
   }
 }
 

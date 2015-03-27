@@ -4,7 +4,7 @@
 
 #Testimonials {
   .formContainer {
-    height: 265px;
+    height: 275px;
   }
   .column-left {
       float: none;
@@ -77,7 +77,7 @@
   border-radius: 4px;
   display:inline-block;
   cursor:pointer;
-  color:#ffffff;
+  color:#fff;
   font-family:arial;
   font-size:15px;
   font-weight:bold;
@@ -88,7 +88,7 @@
     -moz-box-shadow:inset 0px 34px 0px -15px #7b2299;
     -webkit-box-shadow:inset 0px 34px 0px -15px #7b2299;
     background-color:#5f1180;
-    color:#ffffff;
+    color:#fff;
     text-decoration:none;
   }
   &:active {
