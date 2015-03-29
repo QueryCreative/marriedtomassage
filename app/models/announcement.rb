@@ -13,7 +13,9 @@ class Announcement < ActiveRecord::Base
 	    	# 	config_options toolbar: { fa: true }
 	    	# end
 	    	field :expires
-	    	field :published_at
+	    	field :published_at do
+	          strftime_format "%m-%d-%Y"
+	        end
 	    	field :external_link
 	    end
 	  end

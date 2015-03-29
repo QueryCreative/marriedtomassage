@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'therapists' => 'main_pages#therapists'
 
   get 'services' => 'main_pages#services'
-  get 'specials' => 'main_pages#specials'
+  #get 'specials' => 'main_pages#specials'
   get 'giftcertificates' => 'main_pages#giftcertificates'
 
   get 'schedule' => 'main_pages#schedule'
@@ -23,6 +23,7 @@ Rails.application.routes.draw do
 
   get 'announcements' => 'announcements#index'
   get 'testimonials' => 'testimonials#index'
+  get 'specials' => 'specials#index'
 
   get 'news' => 'newsposts#index' 
 
