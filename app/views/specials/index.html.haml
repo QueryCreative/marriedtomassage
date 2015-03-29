@@ -1,0 +1,16 @@
+- provide(:title, 'Specials')
+#News#Specials
+  %section.clearfix{role: "top"}
+    %article
+      %h1.lined Specials and Deals
+      - @specials.each do |specials|
+        .post
+          %h3= specials.title
+          .content= specials.content.html_safe
+          -# %span.dateline
+          -#   Published:
+          -#   = specials.published_at
+          -# %span.dateline
+          -#   Expires:
+          -#   = specials.expires
+      =paginate @specials

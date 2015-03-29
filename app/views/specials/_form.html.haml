@@ -1,0 +1,19 @@
+= form_for(@specials) do |f|
+  - if @specials.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@specials.errors.count, "error")
+        prohibited this special from being saved:
+      %ul
+        - @specials.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = f.label :content
+    %br/
+    = f.text_area :content
+  .field
+    = f.label :user_id
+    %br/
+    = f.number_field :user_id
+  .actions
+    = f.submit

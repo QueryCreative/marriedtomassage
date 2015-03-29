@@ -16,7 +16,7 @@ class TestimonialsController < ApplicationController
   end
 
   def create
-    @testimonial = Testimonial.new(newspost_params)
+    @testimonial = Testimonial.new(testimonial_params)
 
     respond_to do |format|
       if @testimonial.save
@@ -31,7 +31,7 @@ class TestimonialsController < ApplicationController
 
   def update
     respond_to do |format|
-      if @testimonial.update(newspost_params)
+      if @testimonial.update(testimonial_params)
         format.html { redirect_to @testimonial, notice: 'Testimonial was successfully updated.' }
         format.json { render :show, status: :ok, location: @testimonial }
       else
@@ -50,10 +50,10 @@ class TestimonialsController < ApplicationController
   end
 
   private
-    def set_announcement
+    def set_testimonal
       @testimonial = Testimonial.find(params[:id])
     end
-    def announcement_params
+    def testimonial_params
       params.require(:testimonial).permit(:content, :user_id)
     end
 end

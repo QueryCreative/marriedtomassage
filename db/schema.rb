@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150312054006) do
+ActiveRecord::Schema.define(version: 20150329041722) do
 
   create_table "announcements", force: :cascade do |t|
     t.text     "content"
@@ -32,6 +32,16 @@ ActiveRecord::Schema.define(version: 20150312054006) do
     t.string   "title"
     t.string   "external_link"
     t.datetime "published_at"
+  end
+
+  create_table "specials", force: :cascade do |t|
+    t.text     "content"
+    t.string   "title"
+    t.string   "external_link"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.datetime "published_at"
+    t.datetime "expires"
   end
 
   create_table "testimonials", force: :cascade do |t|
