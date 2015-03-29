@@ -1,98 +1,20 @@
-// Place all the styles related to the testimonials controller here.
+// Place all the styles related to the specials controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#Testimonials {
-  .formContainer {
-    height: 275px;
-  }
-  .column-left {
-      float: none;
-      width: 100%;
-    @media screen and (min-width: 1170px){
-      width: 45%;
-      margin-right: 5%;
-      float: left;
-    }
-  }
-  .column-right {
-      float: none;
-      width: 100%;
-    @media screen and (min-width: 1170px){
-      width: 50%;
-      float: left;
-    }
-  }
+#Specials {
   .post {
     &:first-of-type {
       margin-top: 1em;
-    }
-    .name {
-      font-variant: italic;
-      color: #3d1151;;
-    }
-    
-    blockquote {
-      background: #f9f9f9;
-      border-left: 10px solid #ccc;
-      margin: 0;
-      padding: 0.5em 10px;
-      quotes: "\201C""\201D""\2018""\2019";
-    }
-    blockquote:before {
-      color: #ccc;
-      content: "\201C";
-      font-size: 48px;
-      font-family: sans-serif;
-      line-height: 0.1em;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
-    }
-    blockquote p:after {
-      color: #ccc;
-      content: "\201D";
-      font-size: 48px;
-      font-family: sans-serif;
-      line-height: 0.1em;
-      margin-left: 0.25em;
-      vertical-align: text-bottom;
-    }
-    blockquote p {
-      display: inline;
-      line-height: 1.5;
-      font-size: 18px;
     }
   }
   .post ~ .post {
     border-top: 2px solid #ccc;
   }
-}
-
-.button, input[type="submit"] {
-  -moz-box-shadow:inset 0px 34px 0px -15px #873bb3;
-  -webkit-box-shadow:inset 0px 34px 0px -15px #873bb3;
-  box-shadow:inset 0px 34px 0px -15px #873bb3;
-  background-color:#7b2299;
-  border: 3px solid #eee;
-  border-radius: 4px;
-  display:inline-block;
-  cursor:pointer;
-  color:#fff;
-  font-family:arial;
-  font-size:15px;
-  font-weight:bold;
-  padding:9px 23px;
-  text-decoration:none;
-  text-shadow:0px -1px 0px #5915d6;
-  &:hover {
-    -moz-box-shadow:inset 0px 34px 0px -15px #7b2299;
-    -webkit-box-shadow:inset 0px 34px 0px -15px #7b2299;
-    background-color:#5f1180;
-    color:#fff;
-    text-decoration:none;
-  }
-  &:active {
-    position:relative;
-    top:1px;
+  .content {
+    img {
+      float: left;
+      max-width: 50%;
+    }
   }
 }
