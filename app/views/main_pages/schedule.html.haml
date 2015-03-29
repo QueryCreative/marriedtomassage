@@ -2,18 +2,20 @@
 %div{id: @title}
 	%section.clearfix{role: "top"}
 		%article.clearfix
-			%h1.lined Schduling Massage Services
+			%h1.lined Scheduling Massage Services
 			.badge-logo
-				=image_tag ('m2m-badge.png')
+				= image_tag('m2m-badge.png')
 			.textblock
 				
 				%h3 If Katrina's schedule is blocked for the time in which you were hoping to book, please call, email, or text her. 
 				%p 
 					She wants to accommodate you if possible.
 
-					= link_to('payment.png')
+					= image_tag('payment.png')
 
 					Visa and Master Cards are accepted as well as Health Savings Cards!
+
+					=link_to "Reserve Now", "https://booknow.appointment-plus.com/3hb2r1jv/", class: "button"
  
 				%h2 
 					PLEASE RESPECT OUR PROFESSION
