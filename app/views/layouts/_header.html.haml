@@ -18,16 +18,16 @@
         = link_to "Online Scheduler", "https://www.styleseat.com/marriedtomassage-sacramento-ca", target: "_blank"
         / = link_to "Online Scheduler ", schedule_path
         or Call: 
-        =link_to "916.467.HEAL (4235)", "tel:+19164674235"
+        =link_to "916.467.HEAL (4325)", "tel:+19164674325"
         
     %nav#nav.main
       %ul
         %li.dropdown
           = link_to "About", about_path
           %ul.secondary
+            %li= link_to "Venue", venue_path
+            %li= link_to "therapists", therapists_path
             %li= link_to "YLEO", yleo_path
-            %li= link_to "Guest Book", guestbook_path
-            %li= link_to "Testimonials", testimonials_path
         %li.dropdown
           = link_to "Services", services_path
           %ul.secondary
@@ -36,11 +36,13 @@
         %li.dropdown
           = link_to "Schedule", schedule_path
           %ul.secondary
-            %li= link_to "Venue", venue_path
             %li= link_to "Reservations", "https://server19.securedata-trans.com/ap/massagebybrie/index.php?page=10"
         %li.dropdown
           = link_to "Announcements", announcements_path
           %ul.secondary
             %li= link_to "News", news_path
-        %li
+        %li.dropdown
           = link_to "Contact", contact_path
+          %ul.secondary
+            %li= link_to "Guest Book", guestbook_path
+            %li= link_to "Testimonials", testimonials_path

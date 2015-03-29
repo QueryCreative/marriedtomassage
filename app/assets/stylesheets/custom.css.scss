@@ -549,7 +549,7 @@ header {
             }
             &:nth-of-type(2){
               ul.secondary {
-                margin-left: -57px;
+                margin-left: -48px;
               }
             }
             &:nth-of-type(3){
@@ -557,12 +557,16 @@ header {
                 margin-left: -41px;
               }
             }
-            /*&:nth-of-type(4){
+            &:nth-of-type(4){
               ul.secondary {
-                margin-left: -30px;
-                width: 100px;
+                margin-left: -18px;
               }
-            }*/
+            }
+            &:nth-of-type(5){
+              ul.secondary {
+                margin-left: -48px;
+              }
+            }
           }
           &:hover, 
           &:focus {
@@ -749,7 +753,14 @@ html, body {
 
 /**map**/
 .map {
-  width: 40%;
+  width: 43%;
+  margin-right: 5%;
+  float: left;
+  @media screen and (max-width: 855px) {
+    width: 100%;
+    float: none;
+    margin: auto;
+  }
   h2 {
     border-bottom: 1px solid #ddd;
   }
@@ -761,7 +772,6 @@ html, body {
       margin-right: 5%;
       margin-bottom: 20px;
       height: 380px;
-      float: left;
     }
     &.map-full {
       #map {
@@ -983,10 +993,25 @@ h1.lined {
       display: none;
     }
   }
+  .badge-logo {
+    float: left;
+    width: 20%;
+    max-width: 300px;
+    text-align: center;
+    margin: 2em 0 0 5%;
+    @media (max-width: 640px) {
+      display: none;
+    }
+    img {
+    }
+  }
   .textblock {
     float: right;
     width: 65%;
     min-width: 320px;
+    @media (max-width: 640px) {
+      width: 100%;
+    }
   }
   .more-menu {
     margin-top: 2em;
@@ -994,7 +1019,7 @@ h1.lined {
   .col-3 {
     .service-box {
       @media (min-width: 1038px) {
-        width: 32%;
+        width: 33%;
       }
       width: 48%;
       display: inline-block;
@@ -1073,8 +1098,27 @@ h1.lined {
 }
 
 #GiftCertificates {
+  h1 {
+    text-align: center;
+    span {
+      font-size: .9rem;
+      font-style: italic;
+    }
+  }
+  .giftcerts {
+    width: 180px;
+    margin: 2em auto;
+    img {
+      &:active {
+        position: relative;
+        top:  1px;
+      }
+    }
+  }
   .spafinder {
-    width: 200px;
+    text-align: center;
+    margin: auto;
+    width: 260px;
   }
 }
 
@@ -1084,6 +1128,59 @@ h1.lined {
     float: left;
     margin-right: 5%;
     img {}
+  }
+}
+
+#Venue {
+  #info {
+    width: 50%;
+    float: left;
+    @media screen and (max-width: 855px) {
+      width: 100%;
+      float: none;
+    }
+    h1 {
+      margin-bottom: 1em;
+    }
+    address {
+      p {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .building {
+      display: inline-block;
+      vertical-align: top;
+      width: 45%;
+      min-width: 160px;
+      margin-top: 1em;
+      margin-right: 2em;
+      @media screen and (max-width: 855px) {
+        width: 100%;
+        margin: 1em auto 0;
+      }
+      img {
+        border: 5px solid #fff;
+        box-shadow: 0 0 6px #000;
+        border-radius: 4px;
+      }
+    }
+    .signage {
+      display: inline-block;
+      vertical-align: top;
+      width: 45%;
+      min-width: 160px;
+      margin-top: 1em;
+      @media screen and (max-width: 855px) {
+        width: 100%;
+        margin: 1em auto 0;
+      }
+      img {
+        border: 5px solid #fff;
+        box-shadow: 0 0 6px #000;
+        border-radius: 4px;
+      }
+    }
   }
 }
 
