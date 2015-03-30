@@ -1,7 +1,7 @@
 //fixes social addthis links
 var addthis;
 addthis = function() {
-    var script = 'http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55181f164231a203#async=1';
+    var script = 'https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55181f164231a203#async=1';
       // Remove all global properties set by addthis, otherwise it won't reinitialize
       for (var i in window) {
         if (/^addthis/.test(i) || /^_at/.test(i)) {
