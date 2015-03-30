@@ -10,7 +10,6 @@
     %span.barleft &#124;
     %ul
       - if logged_in?
-        %li= link_to "Profile", current_user
         - if current_user && current_user.admin?
           %li= link_to "Admin", '/admin'
         %li= link_to "Log out", destroy_user_session_path, method: :delete

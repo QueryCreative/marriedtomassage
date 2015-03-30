@@ -993,6 +993,9 @@ h1.lined {
       display: none;
     }
   }
+  .payment { 
+    max-width: 420px;
+  }
   .badge-logo {
     float: left;
     width: 20%;
@@ -1085,14 +1088,17 @@ h1.lined {
 #YLEO {
   .video {
     float: left;
+    margin-right: 5%;
   }
   .join {
-    margin-top: 1em;
     @media screen and (min-width: 580px){
       float: left;
       width: 45%;
-      margin-left: 5%;
       margin-top: 0;
+    }
+    @media screen and (max-width: 1090px) {
+      margin-top: 1em;
+      width: 50%;
     }
   }
 }
