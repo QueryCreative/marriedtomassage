@@ -38,15 +38,15 @@
     = render 'layouts/shim'
 
     / ShareThis
-    /= render 'layouts/sharethishead 
+    = render 'layouts/sharethishead'
     / Go to www.addthis.com/dashboard to customize your tools
-    %script{:async => "async", :src => "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55181f164231a203", :type => "text/javascript"} 
+    /%script{:async => "async", :src => "https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55181f164231a203", :type => "text/javascript"} 
 
   %body#top
     .wrapper
       .header
         = render 'layouts/header'
-      .addthis_sharing_toolbox
+      /.addthis_sharing_toolbox
       = yield
       = render 'layouts/gmaps'
       .push
@@ -54,5 +54,5 @@
       = render 'layouts/footer'
 
     /ShareThis
-    /= render 'layouts/sharethisfoot'
+    = render 'layouts/sharethisfoot'
     
