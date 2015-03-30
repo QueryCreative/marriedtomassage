@@ -16,4 +16,5 @@
 //= require bootstrap
 //= require slick
 //= require turbolinks
+//= require addthis
 //= require_tree .

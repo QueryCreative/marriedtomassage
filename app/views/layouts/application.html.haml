@@ -16,9 +16,9 @@
     %meta{:content => "#D83434", :name => "msapplication-TileColor"}
     %meta{:content => "tileicon.png", :name => "msapplication-TileImage"}
 
-    %script{src: "//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
-    %link{href: "//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"}
-    %script{src: "//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
+    %link{href: "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"}
     %script{src: "https://maps.googleapis.com/maps/api/js"}
 
     = stylesheet_link_tag    'application', media: 'all', |
@@ -38,12 +38,15 @@
     = render 'layouts/shim'
 
     / ShareThis
-    /= render 'layouts/sharethishead   
+    /= render 'layouts/sharethishead 
+    / Go to www.addthis.com/dashboard to customize your tools
+    %script{:async => "async", :src => "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55181f164231a203", :type => "text/javascript"} 
 
   %body#top
     .wrapper
       .header
         = render 'layouts/header'
+      .addthis_sharing_toolbox
       = yield
       = render 'layouts/gmaps'
       .push
@@ -51,5 +54,5 @@
       = render 'layouts/footer'
 
     /ShareThis
-    = render 'layouts/sharethisfoot'
+    /= render 'layouts/sharethisfoot'
     
