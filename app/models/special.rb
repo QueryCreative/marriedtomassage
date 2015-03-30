@@ -7,9 +7,7 @@ class Special < ActiveRecord::Base
     rails_admin do
       edit do
         field :title
-        field :content, :wysihtml5 do
-          config_options toolbar: { fa: true }
-        end
+        field :content
         field :published_at do
           strftime_format "%m-%d-%Y"
         end
