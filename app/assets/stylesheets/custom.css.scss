@@ -1056,20 +1056,28 @@ h1.lined {
           font-style: italic;
         }
       }
-      .image-left {
-        float: left;
-        width: 45%;
-        max-width: 380px;
-        margin-right: 5%;
-        margin-top: 1em;
-        @media screen and (max-width: 480px){
-          float: none;
-          width: 100%;
-        }
-        img {
-          box-shadow: 3px 3px 6px rgba(0,0,0, .3);
-        }
-      }
+    }
+  }
+}
+
+.textblock {
+  .image-left {
+    float: left;
+    margin-right: 5%;
+  }
+  .image-right {
+    float: right;
+    margin-left: 5%;
+  }
+  .image-left, .image-right {
+    width: 45%;
+    max-width: 380px;
+    @media screen and (max-width: 480px){
+      float: none;
+      width: 100%;
+    }
+    img {
+      box-shadow: 3px 3px 6px rgba(0,0,0, .3);
     }
   }
 }

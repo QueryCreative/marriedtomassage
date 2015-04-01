@@ -17,6 +17,10 @@ Rails.application.routes.draw do
   #get 'specials' => 'main_pages#specials'
   get 'giftcertificates' => 'main_pages#giftcertificates'
 
+  get 'tmj' => 'main_pages#tmj'
+  get 'sciatica' => 'main_pages#sciatica'
+  get 'benefits' => 'main_pages#benefits'
+
   get 'schedule' => 'main_pages#schedule'
   get 'venue' => 'main_pages#venue'
   get 'reservation' => 'main_pages#reservation'
