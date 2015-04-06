@@ -2,15 +2,16 @@
 %div{id: @title}
   %section.clearfix{role: "top"}
     %article
-      %h1 
-        Gift Certificates
-        %br
-        %span for purchase in studio or online:
-      
-      .ext-logo.giftcerts
-        =link_to(image_tag("giftcertbuy.gif"), "https://www.thegiftcardcafe.com/cart/index.php?storeID=6872", target: "_blank")
+      .block
+        %h1 
+          Gift Certificates
+          %br
+          %span for purchase in studio or online:
+        
+        .ext-logo.giftcerts
+          =link_to(image_tag('gift-cert.png'), "https://www.thegiftcardcafe.com/cart/index.php?storeID=6872", target: "_blank")
 
-      .clear
-      .ext-logo.spafinder
-        %h3 We also accept SpaFinder:
-        =image_tag("ext-logo-spafinder-wellness365.png")
+      .block
+        .ext-logo.spafinder
+          %h3 We also accept SpaFinder:
+          =image_tag("ext-logo-spafinder-wellness365.png")

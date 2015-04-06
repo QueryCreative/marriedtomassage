@@ -1112,6 +1112,24 @@ h1.lined {
 }
 
 #GiftCertificates {
+  section {
+    padding: 2.2em 15%;
+    @media screen and (max-width: 665px) {
+      padding: 2.2em 1em;
+    }
+
+  }
+  .block {
+    @media screen and (min-width: 601px) {
+      float: left;
+      width: 47%;
+    }
+  }
+  .block ~ .block {
+    @media screen and (min-width: 601px) {
+      margin-left: 3%;
+    }
+  }
   h1 {
     text-align: center;
     span {
