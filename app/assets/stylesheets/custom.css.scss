@@ -21,11 +21,11 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400);
 @font-face {
   font-family: 'WeblySleekUISemilight';
-  src: url('weblysleekuisl.eot');
-  src: url('weblysleekuisl.eot?#iefix') format('embedded-opentype'),
-       url('weblysleekuisl.woff') format('woff'),
-       url('weblysleekuisl.ttf') format('truetype'),
-       url('weblysleekuisl.svg#WeblySleekUISemilight') format('svg');
+  src: font-url('weblysleekuisl.eot');
+  src: font-url('weblysleekuisl.eot?#iefix') format('embedded-opentype'),
+       font-url('weblysleekuisl.woff') format('woff'),
+       font-url('weblysleekuisl.ttf') format('truetype'),
+       font-url('weblysleekuisl.svg#WeblySleekUISemilight') format('svg');
 }
 
 .fontpro,.fontpro-21647 {
@@ -1140,13 +1140,22 @@ h1.lined {
   }
   .giftcerts {
     width: 180px;
+    height: 110px;
     margin: 2em auto;
-    img {
+    a {
+      font-size: 0;
+      color: transparent;
+      display: block;
+      width: 180px;
+      height: 110px;
+      background: image-url('giftcertificate.png') ;
+      background-size: cover;
       &:active {
         position: relative;
         top:  1px;
       }
     }
+
   }
   .spafinder {
     text-align: center;
