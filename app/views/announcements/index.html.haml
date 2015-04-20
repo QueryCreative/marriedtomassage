@@ -9,7 +9,7 @@
             = announcement.content.html_safe
             -if announcement.external_link
               %p= link_to 'Read More »', announcement.external_link, class: 'link', :target => "_blank"
-            %span.dateline
-              Published
-              = announcement.published_at
+            -# %span.dateline
+              -# Published
+              -# = announcement.published_at
       =paginate @announcements
