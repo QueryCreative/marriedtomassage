@@ -2,7 +2,7 @@ class AnnouncementsController < ApplicationController
   before_action :set_announcements, only: [:show, :edit, :update, :destroy]
 
   def index
-    @announcements = Announcement.order('published_at ASC').page params[:page]
+    @announcements = Announcement.order('published_at DESC').page params[:page]
   end
 
   # GET /newsposts/1
