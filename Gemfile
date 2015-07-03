@@ -21,6 +21,8 @@ gem 'jquery-turbolinks'
 gem 'jbuilder',             '2.2.3'
 gem 'sdoc',                 '0.4.0', group: :doc
 gem 'sitemap_generator'
+#gem 'social-share-button'
+#gem 'shareable'
 
 # deployment
 gem 'capistrano'
