@@ -6,7 +6,7 @@
   %section.clearfix{role: "main"}
     %article.intro.clearfix
       .item.mobilenoshow
-        =image_tag ('portrait.jpeg')
+        = image_tag('portrait.jpeg', alt:'katrina portrait')
       .item.text-box
         %h1
           %span
@@ -27,7 +27,7 @@
         %h2= link_to "Signature Service:", services_path 
         %p 
           Vow to Relax with hot stones, aromatherapy utilizing therapeutic-grade essential oils, deep tissue and sports massage in the heart of Midtown Sacramento, CA, with  convenient,
-          = link_to "Online Scheduling.", "https://server19.securedata-trans.com/ap/massagebybrie/index.php?page=10"
+          = link_to "Online Scheduling.", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016"
     %article.home-text.clearfix
       %h2 Put Your Faith in Married to Massage
       %p 
@@ -35,7 +35,7 @@
         Your journey to full health begins with our
         =link_to "Signature Services", services_path 
         which can be conveniently scheduled through our
-        =link_to "Online Scheduler.", "https://server19.securedata-trans.com/ap/massagebybrie/index.php?page=10"
+        =link_to "Online Scheduler.", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016"
         You will receive a full 60-minute massage for your hour of time when you reserve with KATRINA.  
         We are located at a convenient Midtown Sacramento, CA Location: the corner of
         =link_to "21st & I streets", venue_path
@@ -43,13 +43,15 @@
 
     %article.affiliates.clearfix
       .ext-logo.yleo
-        =link_to(image_tag("ext-logo-yleo.png"), yleo_path)
+        =link_to(image_tag("ext-logo-yleo.png", alt:'yelo logo'), yleo_path)
       .ext-logo.abmp
-        =link_to(image_tag("ext-logo-abmp.png"), "http://www.abmp.com/")
+        =link_to(image_tag("ext-logo-abmp.png", alt:'abmp logo'), "http://www.abmp.com/")
       .ext-logo.alist
-        =link_to(image_tag("ext-logo-alist.png"), "http://kcra.cityvoter.com/married-to-massage/biz/670341")
+        =link_to(image_tag("ext-logo-alist.png", alt:'a-list logo'), "http://kcra.cityvoter.com/married-to-massage/biz/670341")
       .ext-logo.opeiu
-        =link_to(image_tag("ext-logo-opeiu.png"), "http://www.opeiu.org/")
+        =link_to(image_tag("ext-logo-opeiu.png", alt:'opeiu logo'), "http://www.opeiu.org/")
+      .ext-logo.ima
+        =link_to(image_tag("official-logo-ima.png", alt:'IMA logo'), "#")
       .ext-logo.spafinder
-        =image_tag("ext-logo-spafinder-wellness365.png")
+        =image_tag("ext-logo-spafinder-wellness365.png", alt:'Spafinder logo')
         
