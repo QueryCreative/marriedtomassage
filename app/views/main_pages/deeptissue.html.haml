@@ -1,0 +1,35 @@
+- @title = "deep-tissue-massage"
+%div{id: @title}
+
+	%section.clearfix{role: "top"}
+		%article.clearfix
+			%h1.lined Diamond-Grade Deep Tissue Massage & Bodywork
+			.textblock
+				.image-left
+					= image_tag('deep-tissue-massage.jpg', alt:'Deep Tissue massage')
+				%h3 What is a Deep Tissue Massage?
+				%p
+					A Deep Tissue massage focuses on the deeper muscles and fascia.  Your massage therapist will perform slower and deeper techniques than a relaxation massage, use less lotion and may incorporate appropriate stretches and myofascial release. Deep Tissue bodywork can help alleviate chronic pain and muscle tension issues, as well as, increase range of motion.
+
+				%h3 Why request a Diamond-Grade Deep Tissue Massage?
+				%p
+					If you have sustained injuries or have had surgeries, deep tissue body work may be the massage you request as adhesions (which are bands of ridge tissue that can be painful) may form creating limited mobility.  If you workout regularly will find that a deep tissue massage can eliminate the tension in your muscles caused by strenuous activities. Postural issues can be addressed during a deep tissue massage and, with continued therapy, may be corrected.
+
+				%h3 What to expect after a Diamond-Grade Deep Tissue Massage?
+				%p
+					Much like a workout, many clients report soreness for two days following a deep tissue bodywork session. The therapist will usually recommend icing the areas focused on to alleviate any soreness and swelling.   Some clients may also choose to take pain relievers but as always, check with your doctor first.  It's been suggested that clients should avoid any strenuous activities immediately following a deep tissue massage however, you should keep moving, stretching and rehydrating your muscles by drinking more water.
+
+				%h3 Closing Notes:
+				%p You should not experience pain during that massage that is so uncomfortable that you are unable to breathe though the treatment.  Always communicate with the massage therapist during the massage if necessary.
+
+				.post
+					%h3= link_to "Testimonial:", testimonials_path
+					%blockquote.testimonial
+						%p
+							Katrina is the best therapist for deep tissue work that i have been to. I have averaged 35-40 massages a year for the last 20 plus years. My work is very physically demanding and deep tissue work is a necessity. I found Katrina almost a year ago and i have gone to her almost every week. All the massages i have gotten from her i can honestly say, would have been better than any of the therapists in previous years. I literally have had a least 700 massages in the past 20 years.
+						.name Tim L., July 2015
+
+
+				=link_to "Reserve Now", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016", target: "_blank", class: "button"
+
+				= render 'layouts/addto'

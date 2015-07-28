@@ -11,4 +11,6 @@
           %span.dateline
             Published
             = newsPost.published_at
+      .post
+        = render 'layouts/addto'
       =paginate @newsPosts

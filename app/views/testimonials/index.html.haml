@@ -6,10 +6,12 @@
       - @testimonials.each do |testimonials|
         .post
           %h1= testimonials.title
-          %blockquote.testimonial 
+          %blockquote.testimonial
             %p= testimonials.content.html_safe
             .name= testimonials.name
             -# %span.dateline= testimonials.published_at
+      .post
+        = render 'layouts/addto'
       =paginate @testimonials
 
 
@@ -18,7 +20,7 @@
         %h2 Submit A Testimonial
         %form#ss-form{:action => "https://docs.google.com/forms/d/1qUrdq9KB6hc8S9RF-XnqOovPwT4gzV2kkeDpAIgcdqU/formResponse", :method => "POST", :onsubmit => "", :target => "_self"}
           %textarea.ss-q-long.input{"aria-label" => "Comments  ", "aria-required" => "true", :cols => "0", :dir => "auto", :name => "entry.1672611974", :required => "true", :rows => "8", :placeholder => "Comments"}
-          %input.ss-q-short.input{"aria-label" => "Email  Must be a valid email address", :dir => "auto", :name => "entry.782387978", :title => "Must be a valid email address", :type => "email", :value => "", :placeholder => "Email"}         
+          %input.ss-q-short.input{"aria-label" => "Email  Must be a valid email address", :dir => "auto", :name => "entry.782387978", :title => "Must be a valid email address", :type => "email", :value => "", :placeholder => "Email"}
           %input.ss-q-short.input{"aria-label" => "Name  ", :dir => "auto", :name => "entry.1379570341", :title => "", :type => "text", :value => "", :placeholder => "Title"}
           %input.ss-q-short.input{"aria-label" => "Company  ", :dir => "auto", :name => "entry.1651688202", :title => "", :type => "text", :value => "", :placeholder => "Company"}
             %input{:name => "draftResponse", :type => "hidden", :value => "[,,&quot;297353773176205858&quot;]\n"}

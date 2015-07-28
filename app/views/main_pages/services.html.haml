@@ -7,7 +7,7 @@
       .flourish
         = image_tag('flouish-light.png', alt:'flourish')
       .textblock
-        %p 
+        %p
           Married to Massage provides customized 90 and 60 minute massages packages. We offer client-acclaimed massage services in the Sacramento, CA area. Scheduling is a snap and Katrina always has your well-being at the forefront of her mind.
         %p
           All massages/bodywork treatments include therapeutic-grade essential oils and hot towels. You can expect a full 60 minute massage when you book for an hour.
@@ -32,8 +32,8 @@
         -#   %dd.price &#36;75
         %dl.order-bar
           %dt.service
-            =link_to "Cherished Chair massage", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016"
-          %dd.price 
+            =link_to "Cherished Chair massage", chair_massage_path
+          %dd.price
             =link_to "Contact for Quote", contact_path, style: "color: white;"
 
     %article.more-menu
@@ -43,7 +43,7 @@
           .hex-icon
             = image_tag('diamond-hex.png', alt:'diamond grade massage icon')
           %h3 Diamond-Grade Deep-Tissue
-          %p 
+          %p
             Designed to remove severe tension, deep tissue massage is a technique used to relieve both muscles and connective tissue below the surface. It helps to improve range of motion using stretches to help your body feel freer and stronger. A great massage for those with active lifestyles.
 
           %dl.order-bar
@@ -59,7 +59,7 @@
           .hex-icon
             = image_tag('candle-hex.png', alt:'relaxation massage icon')
           %h3 Registered for Relaxation
-          %p 
+          %p
             Massage oil or cream is used with smooth, gliding strokes. Swedish massage uses firm but gentle pressure to promote relaxation, ease muscle tension and create other health benefits. This classic massage will ease stress and allow you to slip into a calm state of relaxation.
 
           %dl.order-bar
@@ -103,3 +103,5 @@
           -#   %dt.service
           -#     =link_to "40 Minute Proposal Pampering", "https://www.styleseat.com/marriedtomassage-sacramento-ca"
           -#   %dd.price &#36;37
+
+      = render 'layouts/addto'

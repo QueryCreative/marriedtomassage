@@ -13,8 +13,8 @@
 		%article#info
 			%h1 Located in Sacramento Midtown
 			%address
-				%p 
-					902 21st Street 
+				%p
+					902 21st St
 					%br
 					(Corner of 21st & I)
 					%br
@@ -22,14 +22,14 @@
 			.info
 				%p Free 2 hour Parking on I Street
 				%p Located just a few short blocks from the Sacramento Convention Center Complex and McKinley Park
-				%p 
-					Massages are 
+				%p
+					Massages are
 					%b by appointment only
 
 				=link_to "Reserve Now", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016", target: "_blank", class: "button"
-				
-				%h4.red 
-					%b.red Please note: 
+
+				%h4.red
+					%b.red Please note:
 				%ul
 					%li.red This studio location is located on the upper level and requires that you climb steps.
 					%li.red We cannot be responsible for lost/stolen items.
@@ -38,3 +38,5 @@
 				=image_tag('902-21-midtown.png', alt:'building')
 			.signage
 				=image_tag('street-sign.jpg', alt:'signage')
+
+			= render 'layouts/addto'

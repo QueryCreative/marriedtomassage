@@ -10,36 +10,40 @@
       .item.text-box
         %h1
           %span
-            %i When in Pain 
+            %i When in Pain
           %br
           Trust Married To Massage
         %p We are committed to your health and well-being. We use the most vetted techniques to loosen sore muscles, sooth pinched nerves, calm inflamed joints and bring you back to your peak.
 
       .item.text-box
-        %h2 Pain Management: 
+        %h2 Pain Management:
         %ul
-          %li= link_to "TMJ Massage", tmj_path  
-          %li= link_to "Sciatica Massage", sciatica_path 
-          %li 
-            And other 
-            = link_to "Benefits of Massage", benefits_path 
-            such as alleviating headaches and stress relief. 
-        %h2= link_to "Signature Service:", services_path 
-        %p 
+          %li= link_to "TMJ Massage", tmj_path
+          %li= link_to "Sciatica Massage", sciatica_path
+          %li= link_to "Deep Tissue Massage", deeptissue_path
+          %li= link_to "Chair Massage", chair_massage_path
+          %li
+            And other
+            = link_to "Benefits of Massage", benefits_path
+            such as alleviating headaches and stress relief.
+        %h2= link_to "Signature Service:", services_path
+        %p
           Vow to Relax with hot stones, aromatherapy utilizing therapeutic-grade essential oils, deep tissue and sports massage in the heart of Midtown Sacramento, CA, with  convenient,
           = link_to "Online Scheduling.", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016"
     %article.home-text.clearfix
       %h2 Put Your Faith in Married to Massage
-      %p 
-        We are here to offer you pain relief, increased range of motion and relaxation with the customer service you deserve!  
+      %p
+        We are here to offer you pain relief, increased range of motion and relaxation with the customer service you deserve!
         Your journey to full health begins with our
-        =link_to "Signature Services", services_path 
+        =link_to "Signature Services", services_path
         which can be conveniently scheduled through our
         =link_to "Online Scheduler.", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016"
-        You will receive a full 60-minute massage for your hour of time when you reserve with KATRINA.  
+        You will receive a full 60-minute massage for your hour of time when you reserve with KATRINA.
         We are located at a convenient Midtown Sacramento, CA Location: the corner of
         =link_to "21st & I streets", venue_path
         &#151; where FREE 2-hour street parking is available on I Street.
+
+      = render 'layouts/addto'
 
     %article.affiliates.clearfix
       .ext-logo.yleo
@@ -54,4 +58,3 @@
         =link_to(image_tag("official-logo-ima.png", alt:'IMA logo'), "#")
       .ext-logo.spafinder
         =image_tag("ext-logo-spafinder-wellness365.png", alt:'Spafinder logo')
-        

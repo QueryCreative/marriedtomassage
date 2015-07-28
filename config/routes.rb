@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get 'tmj' => 'main_pages#tmj'
   get 'sciatica' => 'main_pages#sciatica'
   get 'benefits' => 'main_pages#benefits'
+  get 'deeptissue' => 'main_pages#deeptissue'
+  get 'chair-massage' => 'main_pages#chair-massage'
 
   get 'schedule' => 'main_pages#schedule'
   get 'venue' => 'main_pages#venue'
@@ -29,7 +31,7 @@ Rails.application.routes.draw do
   get 'testimonials' => 'testimonials#index'
   get 'specials' => 'specials#index'
 
-  get 'news' => 'newsposts#index' 
+  get 'news' => 'newsposts#index'
 
   get 'contact' =>  'main_pages#contact'
 

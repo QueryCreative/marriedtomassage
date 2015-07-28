@@ -1,10 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@mixin box-size-border { 
+@mixin box-size-border {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;    
-  box-sizing: border-box;         
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @mixin flex-box {
@@ -82,7 +82,7 @@ q:before, q:after, blockquote:before, blockquote:after {
 a img {
   border: none;
 }
-article, aside, details, figcaption, figure, footer, 
+article, aside, details, figcaption, figure, footer,
 header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -206,7 +206,7 @@ pre {
   -webkit-border-radius: 8px;
   border-radius: 8px;
 }
-img { 
+img {
   width: 100%;
 }
 a:hover {
@@ -240,7 +240,7 @@ a:hover, a:focus {
 .black {
   color: #222 !important;
 }
-.white { 
+.white {
   color: #fff !important;
 }
 .purple {
@@ -322,7 +322,7 @@ a, p {
 
 /** button styles **/
 .button {
-  &.purple { 
+  &.purple {
     a {
       color: white;
       text-decoration: none;
@@ -344,7 +344,7 @@ a, p {
   }
 }
 /*** main styles ***/
-body { 
+body {
   background: #242424 url(asset-path('background1small.jpg')) no-repeat center fixed;
   @media screen and (min-width: 768px) {
     background: #242424 url(asset-path('background1.jpg')) no-repeat center fixed;
@@ -428,11 +428,11 @@ header {
   @media screen and (max-width: 630px) {
     text-align: left;
     padding: 2em 0 0 0;
-  } 
+  }
   position: relative;
   border-top: 3px solid rgba(0,0,0,.3);
   box-shadow: 0 3px 4px rgba(0,0,0,.3);
-  
+
   .menu {
     color: #fff;
     float: none;
@@ -519,7 +519,7 @@ header {
         }
         li.dropdown {
           @media (max-width: 630px) {
-            &::after {   
+            &::after {
               content: '\25bc';
               display: block;
               width: 16px;
@@ -571,7 +571,7 @@ header {
               }
             }
           }
-          &:hover, 
+          &:hover,
           &:focus {
             ul.secondary {
               display: block;
@@ -606,7 +606,7 @@ header {
                     font-size: 14px;
                     text-decoration: none;
                     color: #fff;
-                  &:hover, 
+                  &:hover,
                   &:focus {
                     color: #ccc;
                     text-decoration: none;
@@ -681,7 +681,7 @@ footer {
     display: inline-block;
     @media screen and (max-width: 960px) {
       margin-left: 25%;
-    } 
+    }
     ul {
       display: inline;
       list-style-type: none;
@@ -705,7 +705,7 @@ footer {
     .barleft {
       @media screen and (max-width: 960px) {
         display: none;
-      } 
+      }
     }
   }
   .email {
@@ -714,12 +714,12 @@ footer {
       width: 100%;
       margin: 0 auto;
       text-align: center;
-    } 
+    }
   }
   .reserve {
     @media screen and (max-width: 830px) {
       display: none;
-    } 
+    }
   }
   .to-top {
     position: relative;
@@ -729,7 +729,7 @@ footer {
     &:hover, &:focus {
       color: #ddd;
     }
-    &::after {   
+    &::after {
       content: '\25b2';
       display: block;
       width: 16px;
@@ -993,7 +993,7 @@ section[role=main]{
 }
 
 /** page content **/
-h1.lined { 
+h1.lined {
   border-bottom: 2px solid #3e1151;
   padding-bottom: 3px;
   margin-bottom: 0;
@@ -1008,7 +1008,7 @@ h1.lined {
       display: none;
     }
   }
-  .payment { 
+  .payment {
     max-width: 380px;
   }
   .badge-logo {
@@ -1396,3 +1396,22 @@ nav.share {
 }
 
 
+#addto {
+  margin: 1em auto;
+}
+
+#chair-massage {
+  .work-stress {
+    li {
+      font-size: .8rem;
+      font-weight: normal;
+      padding: 0;
+      margin: 0;
+      line-height: 1.4;
+    }
+  }
+}
+
+.small-link {
+  font-size: .8rem;
+}
