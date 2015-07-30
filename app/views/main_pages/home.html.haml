@@ -14,22 +14,29 @@
           %br
           Trust Married To Massage
         %p We are committed to your health and well-being. We use the most vetted techniques to loosen sore muscles, sooth pinched nerves, calm inflamed joints and bring you back to your peak.
+        %h2= link_to "Signature Services:", services_path
+        %p
+          Vow to Relax with hot stones, aromatherapy utilizing therapeutic-grade essential oils, deep tissue and sports massage in the heart of Midtown Sacramento, CA, with  convenient,
+          = link_to "Online Scheduling.", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016"
+          %ul
+            %li= link_to "Diamond-Grade Deep Tissue & Sports Massage & Bodywork", deeptissue_path
+            %li= link_to "Cherished Chair Massage", chair_massage_path
 
       .item.text-box
         %h2 Pain Management:
         %ul
           %li= link_to "TMJ Massage", tmj_path
           %li= link_to "Sciatica Massage", sciatica_path
-          %li= link_to "Deep Tissue Massage", deeptissue_path
-          %li= link_to "Chair Massage", chair_massage_path
+          %li= link_to "Massage for Frozen Shoulder Syndrome", frozen_shoulder_path
+          %li= link_to "Massage for Plantar Fasciitis", plantar_fasciitis_path
+          %li Fibromyalgia
+          %li Carpel Tunnel
+          %li Golfer's Elbow & Tennis Elbow
           %li
             And other
             = link_to "Benefits of Massage", benefits_path
             such as alleviating headaches and stress relief.
-        %h2= link_to "Signature Service:", services_path
-        %p
-          Vow to Relax with hot stones, aromatherapy utilizing therapeutic-grade essential oils, deep tissue and sports massage in the heart of Midtown Sacramento, CA, with  convenient,
-          = link_to "Online Scheduling.", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016"
+
     %article.home-text.clearfix
       %h2 Put Your Faith in Married to Massage
       %p

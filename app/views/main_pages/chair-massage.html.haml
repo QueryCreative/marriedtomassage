@@ -1,53 +1,233 @@
 - @title = "chair-massage"
 %div{id: @title}
 
-	%section.clearfix{role: "top"}
-		%article.clearfix
-			%h1.lined What is a Cherished Chair Massage?
-			.textblock
-				.image-right
-					= image_tag('chair-massage-union.png', alt:'chair massage')
-				%p
-					A Cherished Chair Massage session is a fully-clothed, seated massage performed by an experienced, certified massage therapist ordinarily in 10-15 minute increments in an ergonomical chair provided by the therapist. The Cherished Chair Massage focus is typically limited to neck, shoulder, arm and hand issues but also addresses stress-related headaches and muscle tension. The use of therapeutic-grade essential oils may be applied as needed.
+  %section.clearfix{role: "top"}
+    %article.clearfix
+      %h1.lined What is a Cherished Chair Massage?
+      .textblock
+        .image-right
+          = image_tag('chair-massage-union.png', alt:'chair massage')
+        %p
+          A Cherished Chair Massage session is a fully-clothed, seated massage performed by an experienced, certified massage therapist ordinarily in 10-15 minute increments in an ergonomical chair provided by the therapist. The Cherished Chair Massage focus is typically limited to neck, shoulder, arm and hand issues but also addresses stress-related headaches and muscle tension. The use of therapeutic-grade essential oils may be applied as needed.
 
-				%h3 Who reserves our Cherished Chair Massage Services?
-				%p
-					Today top employers realize the importance of keeping their employees and customers at the peak of health & wellness. It is those businesses that seek out regular, weekly and monthly massage services from Married to Massage therapists. Companies hoping to attract high-quality employees, often employ massage therapist as a benefit. Businesses who are experiencing high turnover, consider hiring massage therapists as an employee benefit.
+        %h3 Who reserves our Cherished Chair Massage Services?
+        %p
+          Today top employers realize the importance of keeping their employees and customers at the peak of health & wellness. It is those businesses that seek out regular, weekly and monthly massage services from Married to Massage therapists. Companies hoping to attract high-quality employees, often employ massage therapist as a benefit. Businesses who are experiencing high turnover, consider hiring massage therapists as an employee benefit.
 
-				%h3 What are the benefits of Cherished Chair Massage?
-				%p
-					Progressive businesses employing massage therapists report fewer absences and higher morale. Repetitive use injuries such as tendonitis and carpal tunnel syndrome (common in the workplace) may be prevented when receiving regular massage therapy. Research has indicated that even a short seated massage results in decreased job stress, increased alertness and increased speed & accuracy on math computations. Because 40% of all job turnover is stress related, your new employee training costs can be diminished when providing massage therapy to your employees.
-				%p
-					Work-related Stress Costs in the U.S. industry are estimated at over $300 billion annually as a result of:
-					= link_to 'workplace stress', 'http://www.stress.org/workplace-stress/', class: 'small-link'
-					%span.bold poor decision-making skills resulting in:
-					%ul.work-stress
-						%li accidents
-						%li absenteeism
-						%li employee turnover
-						%li diminished productivity
-						%li medical, legal and insurance costs
-						%li workers' compensation, torts and FELA judgments
+        %h3 What are the benefits of Cherished Chair Massage?
+        %p
+          Progressive businesses employing massage therapists report fewer absences and higher morale. Repetitive use injuries such as tendonitis and carpal tunnel syndrome (common in the workplace) may be prevented when receiving regular massage therapy. Research has indicated that even a short seated massage results in decreased job stress, increased alertness and increased speed & accuracy on math computations. Because 40% of all job turnover is stress related, your new employee training costs can be diminished when providing massage therapy to your employees.
+        %p
+          Work-related Stress Costs in the U.S. industry are estimated at over $300 billion annually as a result of:
+          = link_to 'workplace stress', 'http://www.stress.org/workplace-stress/', class: 'small-link'
+          %span.bold poor decision-making skills resulting in:
+          %ul.work-stress
+            %li accidents
+            %li absenteeism
+            %li employee turnover
+            %li diminished productivity
+            %li medical, legal and insurance costs
+            %li workers' compensation, torts and FELA judgments
 
-				%h3 Why do companies choose Married to Massage for Chair Massage over other therapists?
-				%p
-					Our experienced therapists educate clients with posture and stretching suggestions. Cherished Chair Massage coupled with our therapeutic-grade essential oil application increases alertness. Employers receive discounted studio gift certificates to offer as employee incentives. Our professional, dependable massage therapists are fully insured with liability insurance and are willing to add your company as a rider to our polices if requested. Cherished Chair Massage services are competitively priced. For as little as $49/hour (2-hour minimum)*, your business can acquire top massage therapists which may attract the highest-quality employment candidates.
+        %h3 Why do companies choose Married to Massage for Chair Massage over other therapists?
+        %p
+          Our experienced therapists educate clients with posture and stretching suggestions. Cherished Chair Massage coupled with our therapeutic-grade essential oil application increases alertness. Employers receive discounted studio gift certificates to offer as employee incentives. Our professional, dependable massage therapists are fully insured with liability insurance and are willing to add your company as a rider to our polices if requested. Cherished Chair Massage services are competitively priced. For as little as $49/hour (2-hour minimum)*, your business can acquire top massage therapists which may attract the highest-quality employment candidates.
 
-				-# .todo add contact form
+    =link_to "Reserve Now", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016", target: "_blank", class: "button"
 
-				=link_to "Reserve Now", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016", target: "_blank", class: "button"
+    = render 'layouts/addto'
 
-				= render 'layouts/addto'
+    %h4 To further inquire about our services and to provide with an accurate quote, please complete the following form and you will receive a response within 24 hours
 
-
-
-
-
-
-
-
-
-
-
-
-
+    .formContainer.chair-contact
+      %form#ss-form{:action => "https://docs.google.com/forms/d/1EiW6p74bDh9aNBULOZSsGIzHO8iThjJ1Qoo0K1ajQ54/formResponse", :method => "POST", :onsubmit => "", :target => "_self"}
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-text{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_841215854"}
+                .ss-q-title
+                  Estimation of how many employees will be taking advantage of our massage service
+              %br
+              %input#entry_841215854.ss-q-short{"aria-label" => "Estimation of how many employees will be taking advantage of our massage service", :dir => "auto", :name => "entry.841215854", :step => "any", :type => "number", :value => ""}
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-time{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_1435247354"}
+                .ss-q-title
+                  Length of time for each massage (typically 10-15 minutes)
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              .ss-q-time
+                .ss-datetime-box.goog-inline-block{:dir => "ltr"}
+                  %select{"aria-label" => "Hours", :id => "entry.1435247354_hour", :name => "entry.1435247354_hour"}
+                    %option{:value => ""} Hrs
+                    %option{:value => "0"} 0
+                    %option{:value => "1"} 1
+                    %option{:value => "2"} 2
+                  \:
+                  %select{"aria-label" => "Minutes", :id => "entry.1435247354_minute", :name => "entry.1435247354_minute"}
+                    %option{:value => ""} Mins
+                    %option{:value => "00"} 00
+                    %option{:value => "05"} 05
+                    %option{:value => "10"} 10
+                    %option{:value => "15"} 15
+                    %option{:value => "20"} 20
+                    %option{:value => "25"} 25
+                    %option{:value => "30"} 30
+                    %option{:value => "35"} 35
+                    %option{:value => "40"} 40
+                    %option{:value => "45"} 45
+                    %option{:value => "50"} 50
+                    %option{:value => "55"} 55
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-time{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_1621021819"}
+                .ss-q-title
+                  Allotted time for entire service (arrival to departure time)
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              .ss-q-time
+                .ss-datetime-box.goog-inline-block{:dir => "ltr"}
+                  %select{"aria-label" => "Hours", :id => "entry.1621021819_hour", :name => "entry.1621021819_hour"}
+                    %option{:value => ""} Hrs
+                    %option{:value => "0"} 0
+                    %option{:value => "1"} 1
+                    %option{:value => "2"} 2
+                    %option{:value => "3"} 3
+                    %option{:value => "4"} 4
+                    %option{:value => "5"} 5
+                    %option{:value => "6"} 6
+                    %option{:value => "7"} 7
+                    %option{:value => "8"} 8
+                    %option{:value => "9"} 9
+                    %option{:value => "10"} 10
+                    %option{:value => "11"} 11
+                    %option{:value => "12"} 12
+                  \:
+                  %select{"aria-label" => "Minutes", :id => "entry.1621021819_minute", :name => "entry.1621021819_minute"}
+                    %option{:value => ""} Mins
+                    %option{:value => "00"} 00
+                    %option{:value => "15"} 15
+                    %option{:value => "30"} 30
+                    %option{:value => "45"} 45
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-text{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_1494540827"}
+                .ss-q-title
+                  Zip code (travel charges are only incurred if 10 miles or more outside of 95811)
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              %br
+              %input#entry_1494540827.ss-q-short{"aria-label" => "Zip code (travel charges are only incurred if 10 miles or more outside of 95811)", :dir => "auto", :name => "entry.1494540827", :step => "any", :type => "number", :value => ""}
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-radio{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_1875058155"}
+                .ss-q-title
+                  Frequency of service:
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              %ul.ss-choices{"aria-label" => "Frequency of service  ", :role => "radiogroup"}
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_1722931379_1.ss-q-radio{"aria-label" => "Once a Week", :name => "entry.1722931379", :role => "radio", :type => "radio", :value => "Once a Week"}/
+                    %span.ss-choice-label Once a Week
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_1722931379_2.ss-q-radio{"aria-label" => "Once a Month", :name => "entry.1722931379", :role => "radio", :type => "radio", :value => "Once a Month"}/
+                    %span.ss-choice-label Once a Month
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_1722931379_3.ss-q-radio{"aria-label" => "Once a Quarter", :name => "entry.1722931379", :role => "radio", :type => "radio", :value => "Once a Quarter"}/
+                    %span.ss-choice-label Once a Quarter
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_1722931379_4.ss-q-radio{"aria-label" => "Once a Year", :name => "entry.1722931379", :role => "radio", :type => "radio", :value => "Once a Year"}/
+                    %span.ss-choice-label Once a Year
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_1722931379_5.ss-q-radio.ss-q-other-toggle{:name => "entry.1722931379", :role => "radio", :type => "radio", :value => "__other_option__"}/
+                    %span.ss-choice-label Other:
+                  %span.ss-q-other-container.goog-inline-block
+                    %input#entry_1722931379_other_option_response.ss-q-other{"aria-label" => "Other", :dir => "auto", :name => "entry.1722931379.other_option_response", :type => "text", :value => ""}/
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-item-required.ss-text{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_881739568"}
+                .ss-q-title
+                  Name
+                  %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              %input#entry_881739568.ss-q-short{"aria-label" => "Name  ", :dir => "auto", :name => "entry.881739568", :title => "", :type => "text", :value => ""}
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-text{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_1564395407"}
+                .ss-q-title
+                  Title
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              %input#entry_1564395407.ss-q-short{"aria-label" => "Title  ", :dir => "auto", :name => "entry.1564395407", :title => "", :type => "text", :value => ""}
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-text{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_1171236638"}
+                .ss-q-title
+                  Phone
+                  %label{"aria-label" => "(Required field)", :for => "itemView.getDomIdToLabel()"}
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              %input#entry_1171236638.ss-q-short{"aria-label" => "Phone  Must match pattern", :dir => "auto", :name => "entry.1171236638", :pattern => ".*\\+?\\(?\\d{2,4}\\)?[\\d\\s-]{3,}.*", :title => "Must match pattern", :type => "text", :value => ""}
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-text{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_1542968118"}
+                .ss-q-title
+                  Email
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              %input#entry_1542968118.ss-q-short{"aria-label" => "Email", :dir => "auto", :name => "entry.1542968118", :title => "Email.", :type => "email", :value => ""}
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-time{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_644595172"}
+                .ss-q-title
+                  Best Time to Contact
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              %input#entry_644595172.ss-q-time{"aria-label" => "Best Time to Contact  ", :dir => "auto", :name => "entry.644595172", :type => "time", :value => ""}
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-radio{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_1600549417"}
+                .ss-q-title
+                  Are you authorized to enter in to a contract and/or issue a deposit for services if required?
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              %ul.ss-choices{"aria-label" => "Are you authorized to enter in to a contract and/or issue a deposit for services if required?", :role => "radiogroup"}
+                %li.ss-choice-item
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_1827679798_1.ss-q-radio{"aria-label" => "Yes", :name => "entry.1827679798", :role => "radio", :type => "radio", :value => "Yes"}/
+                    %span.ss-choice-label Yes
+                  %label
+                    %span.ss-choice-item-control.goog-inline-block
+                      %input#group_1827679798_2.ss-q-radio{"aria-label" => "No", :name => "entry.1827679798", :role => "radio", :type => "radio", :value => "No"}/
+                    %span.ss-choice-label No
+        .ss-form-question.errorbox-good{:role => "listitem"}
+          .ss-item.ss-paragraph-text{:dir => "auto"}
+            .ss-form-entry
+              %label.ss-q-item-label{:for => "entry_1078707660"}
+                .ss-q-title
+                  Comments
+                .ss-q-help.ss-secondary-text{:dir => "auto"}
+              %br
+              %textarea#entry_1078707660.ss-q-long{"aria-label" => "Comments  ", :cols => "0", :dir => "auto", :name => "entry.1078707660", :rows => "2"}
+        %input{:name => "draftResponse", :type => "hidden", :value => "[,,&quot;8657787575980335615&quot;]\n"}
+          %input{:name => "pageHistory", :type => "hidden", :value => "0"}
+            %input{:name => "fvv", :type => "hidden", :value => "0"}
+              %input{:name => "fbzx", :type => "hidden", :value => "8657787575980335615"}
+                .ss-item.ss-navigate
+                  %table#navigation-table
+                    %tbody
+                      %tr
+                        %td#navigation-buttons.ss-form-entry.goog-inline-block{:dir => "ltr"}
+                          %input#ss-submit.jfk-button.jfk-button-action{:name => "submit", :type => "submit", :value => "Submit"}

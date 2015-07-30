@@ -22,6 +22,8 @@ Rails.application.routes.draw do
   get 'benefits' => 'main_pages#benefits'
   get 'deeptissue' => 'main_pages#deeptissue'
   get 'chair-massage' => 'main_pages#chair-massage'
+  get 'frozen-shoulder' => 'main_pages#frozen-shoulder'
+  get 'plantar-fasciitis' => 'main_pages#plantar-fasciitis'
 
   get 'schedule' => 'main_pages#schedule'
   get 'venue' => 'main_pages#venue'
