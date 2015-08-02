@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   get 'chair-massage' => 'main_pages#chair-massage'
   get 'frozen-shoulder' => 'main_pages#frozen-shoulder'
   get 'plantar-fasciitis' => 'main_pages#plantar-fasciitis'
+  get 'elbow' => 'main_pages#elbow'
 
   get 'schedule' => 'main_pages#schedule'
   get 'venue' => 'main_pages#venue'

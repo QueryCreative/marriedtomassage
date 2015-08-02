@@ -30,8 +30,8 @@
           %li= link_to "Massage for Frozen Shoulder Syndrome", frozen_shoulder_path
           %li= link_to "Massage for Plantar Fasciitis", plantar_fasciitis_path
           %li Fibromyalgia
-          %li Carpel Tunnel
-          %li Golfer's Elbow & Tennis Elbow
+          %li Carpal Tunnel
+          %li=link_to "Golfer's Elbow & Tennis Elbow", elbow_path
           %li
             And other
             = link_to "Benefits of Massage", benefits_path
@@ -53,6 +53,8 @@
       = render 'layouts/addto'
 
     %article.affiliates.clearfix
+      .ext-logo.hsa
+        =image_tag("hsa-card.png", alt:'HSA logo')
       .ext-logo.yleo
         =link_to(image_tag("ext-logo-yleo.png", alt:'yelo logo'), yleo_path)
       .ext-logo.abmp

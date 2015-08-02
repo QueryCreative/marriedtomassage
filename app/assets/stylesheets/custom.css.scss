@@ -972,7 +972,8 @@ section[role=main]{
       &.alist { width: 75px; }
       &.opeiu { width: 110px; }
       &.spafinder { width: 80px; }
-      &.ima { width: 90px; }
+      &.hsa { width: 75px; }
+      &.ima { width: 75px; }
       img {
         transition: filter .2s ease;
         filter: brightness(1.2) grayscale(0.7);
@@ -1447,5 +1448,14 @@ nav.share {
   .ss-form-question {
     margin: 1em 0;
     text-align: right;
+  }
+}
+
+#Sciatica {
+  .textblock{
+    .image-left, .image-right {
+      width: 45%;
+      max-width: 250px;
+    }
   }
 }
