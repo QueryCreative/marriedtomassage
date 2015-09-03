@@ -1,0 +1,44 @@
+- @title = "Service Area"
+- @grouping = "Location"
+- @centerLat = 38.577521
+- @centerLng = -121.478166
+- @zoom = 13
+%div{id: "Venue"}
+	%section.clearfix{role: "top"}
+		%article.map
+			.map-container
+				#map
+					=image_tag ('map-img.png')
+
+		%article#info
+			%h1 Service Area includes Sacramento, CA
+			%address
+				%p
+					902 21st St
+					%br
+					(Corner of 21st & I)
+					%br
+					Sacramento, CA 95811
+			.info
+				%p Free 2 hour Parking on I Street
+				%p Located just a few short blocks from the Sacramento Convention Center Complex and McKinley Park
+				%p
+					Massages are
+					%b by appointment only
+				%p=link_to "Service Area Sacramento", service_area_path
+				%p=link_to "Sacramento Massage", sacramento_path
+
+				=link_to "Reserve Now", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016", target: "_blank", class: "button"
+
+				%h4.red
+					%b.red Please note:
+				%ul
+					%li.red This studio location is located on the upper level and requires that you climb steps.
+					%li.red We cannot be responsible for lost/stolen items.
+					%li.red Please leave all valuables including children and pets at home.
+			.building
+				=image_tag('902-21-midtown.png', alt:'building')
+			.signage
+				=image_tag('street-sign.jpg', alt:'signage')
+
+			= render 'layouts/addto'

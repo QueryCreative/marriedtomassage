@@ -657,11 +657,11 @@ header {
   }
 }
 footer {
-  padding: 0 5%;
+  padding: 0 10%;
   padding-top: 15px;
-  height: 55px;
+  height: 125px;
   @media screen and (min-width: 1050px) {
-    height: 45px;
+    height: 75px;
   }
   box-sizing: border-box;
   background: rgba(127, 54, 136, .6);
@@ -1336,7 +1336,7 @@ dl.order-bar {
     left: 33vw;
     width: 390px;
     height: auto;
-    @media (max-width: 520px) {
+    @media screen and (max-width: 520px) {
       left: 5%;
       width: 90%;
     }
@@ -1457,5 +1457,23 @@ nav.share {
       width: 45%;
       max-width: 250px;
     }
+  }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.mobile-hide {
+  display: initial;
+  @media screen and (max-width: 520px) {
+    display: none;
+  }
+}
+
+.mobile-show {
+  display: none;
+  @media screen and (max-width: 520px) {
+    display: initial;
   }
 }

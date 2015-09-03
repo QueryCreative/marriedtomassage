@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'therapists' => 'main_pages#therapists'
 
   get 'services' => 'main_pages#services'
+  get 'service-area' => 'main_pages#service-area'
+  get 'sacramento' => 'main_pages#sacramento'
   #get 'specials' => 'main_pages#specials'
   get 'giftcertificates' => 'main_pages#giftcertificates'
 
@@ -26,6 +28,7 @@ Rails.application.routes.draw do
   get 'plantar-fasciitis' => 'main_pages#plantar-fasciitis'
   get 'elbow' => 'main_pages#elbow'
 
+  get 'privacy-policy' => 'main_pages#privacy-policy'
   get 'schedule' => 'main_pages#schedule'
   get 'venue' => 'main_pages#venue'
   get 'reservation' => 'main_pages#reservation'
