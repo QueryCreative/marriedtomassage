@@ -15,7 +15,7 @@
     .call
       %span
         Use Our
-        = link_to "Online Scheduler", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016", target: "_blank"
+        = link_to "Online Scheduler", reserve_path, target: "_blank"
         / = link_to "Online Scheduler ", schedule_path
         or Call:
         =link_to "916.467.HEAL (4325)", "tel:+19164674325"
@@ -36,7 +36,7 @@
         %li.dropdown
           = link_to "Schedule", schedule_path
           %ul.secondary
-            %li= link_to "Reservations", "https://www.massagebook.com/IndependentMassageAlliance?src=external#booknow651016", target: "_blank"
+            %li= link_to "Reservations", reserve_path, target: "_blank"
         %li.dropdown
           = link_to "Announcements", announcements_path
           %ul.secondary

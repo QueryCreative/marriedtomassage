@@ -41,6 +41,9 @@ Rails.application.routes.draw do
 
   get 'contact' =>  'main_pages#contact'
 
+  get "reserve" => redirect("https://www.massagebook.com/Sacramento~Massage~IMA")
+  # get "/reserve" => redirect("https://www.massagebook.com/Sacramento~Massage~IMA")
+  get "certificate" => redirect("https://www.massagebook.com/Sacramento~Massage~IndependentMassageAlliance?src=external#gift-certificates")
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
