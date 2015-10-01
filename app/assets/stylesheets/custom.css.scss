@@ -23,7 +23,7 @@
   font-family: 'WeblySleekUISemilight';
   src: font-url('weblysleekuisl.eot');
   src: font-url('weblysleekuisl.eot?#iefix') format('embedded-opentype'),
-       font-url('weblysleekuisl.woff') format('woff'),
+       // font-url('weblysleekuisl.woff') format('woff'),
        font-url('weblysleekuisl.ttf') format('truetype'),
        font-url('weblysleekuisl.svg#WeblySleekUISemilight') format('svg');
 }
@@ -1320,6 +1320,24 @@ dl.order-bar {
   margin: 1em 0 1em 1em;
   width: 140px;
 }
+
+@media (min-width: 520px) {
+  .ima-before:before {
+    content: '';
+    display: block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-image: image-url('IMA-mefree-logo-sm.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+    margin-right: 10px;
+    position: relative;
+    top: -10px;
+  }
+}
+.clearer { clear:both; }
 
 /** loading gif **/
 #loader {

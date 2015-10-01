@@ -1,0 +1,10 @@
+<h1>My Blog</h1>
+<%  @posts.each do |post| %>
+  <h3><%= link_to post.title, post %></h3>
+  <p>
+    <%= post.body.html_safe %>
+  </p>
+  <% if post != @posts.last %>
+    <hr />
+  <% end %>
+<% end %>
