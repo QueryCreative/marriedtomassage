@@ -7,6 +7,13 @@
     %article.intro.clearfix
       .item.mobilenoshow
         = image_tag('portrait.jpeg', alt:'katrina portrait')
+        .clear
+        .reviews
+          %h4 Check out more of our excellent reviews:
+          %iframe{allowtransparency: "true", frameborder: "0", height: "100", src: "https://www.massagebook.com/reviewspublic/button/651016", width: "165", class: "framed"}
+          .yelp#yelp-biz-badge-rrc-tAbrlMFDM64AD48pZBrAkg
+          %a{href: "http://yelp.com/biz/married-to-massage-sacramento"}
+            %img{alt:"Married to Massage", src:"http://dyn.yelpcdn.com/extimg/en_US/rrc/tAbrlMFDM64AD48pZBrAkg.png", height:"55", width:"125", style:"width: 125px; margin-left: 12px;"}
       .item.text-box
         %h1
           %span
@@ -30,12 +37,20 @@
           %li= link_to "Massage for Frozen Shoulder Syndrome", frozen_shoulder_path
           %li= link_to "Massage for Plantar Fasciitis", plantar_fasciitis_path
           %li Fibromyalgia
-          %li Carpal Tunnel
+          %li=link_to "Massage for Carpal Tunnel", carpal_tunnel_path
           %li= link_to "Golfer's Elbow & Tennis Elbow", elbow_path
           %li
             And other
             = link_to "Benefits of Massage", benefits_path
             such as alleviating headaches, improving range of motion and relieving stress.
+        .mobile-show
+          .clear
+          .reviews
+            %h4 Check out more of our excellent reviews:
+            %iframe{allowtransparency: "true", frameborder: "0", height: "100", src: "https://www.massagebook.com/reviewspublic/button/651016", width: "165", class: "framed"}
+            .yelp#yelp-biz-badge-rrc-tAbrlMFDM64AD48pZBrAkg
+              %a{href: "http://yelp.com/biz/married-to-massage-sacramento"}
+                %img{alt:"Married to Massage", src:"http://dyn.yelpcdn.com/extimg/en_US/rrc/tAbrlMFDM64AD48pZBrAkg.png", height:"55", width:"125", style:"width: 125px; margin-left: 12px;"}
 
     %article.home-text.clearfix
       %h2 Put Your Faith in Married to Massage
@@ -59,6 +74,8 @@
         =link_to(image_tag("ext-logo-yleo.png", alt:'yelo logo'), yleo_path)
       .ext-logo.abmp
         =link_to(image_tag("ext-logo-abmp.png", alt:'abmp logo'), "http://www.abmp.com/")
+      .ext-logo.camtc
+        =image_tag("CAMTClogo.png", alt: 'CAMTC Logo')
       .ext-logo.alist
         =link_to(image_tag("ext-logo-alist.png", alt:'a-list logo'), "http://kcra.cityvoter.com/married-to-massage/biz/670341")
       .ext-logo.opeiu
@@ -67,3 +84,8 @@
         =link_to(image_tag("IMA-mefree-logo-sm.png", alt:'IMA logo'), therapists_path)
       .ext-logo.spafinder
         =image_tag("ext-logo-spafinder-wellness365.png", alt:'Spafinder logo')
+      .ext-logo.h4h
+        =image_tag("HFH-Logo-TM.png", alt: 'Hands For Heroes Logo')
+
+
+

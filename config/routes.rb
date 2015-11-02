@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   get 'frozen-shoulder' => 'main_pages#frozen-shoulder'
   get 'plantar-fasciitis' => 'main_pages#plantar-fasciitis'
   get 'elbow' => 'main_pages#elbow'
+  get 'carpal-tunnel' => 'main_pages#carpal-tunnel'
 
   get 'privacy-policy' => 'main_pages#privacy-policy'
   get 'schedule' => 'main_pages#schedule'

@@ -14,6 +14,13 @@
         = render 'layouts/addto'
       =paginate @testimonials
 
+      .clear
+      .reviews
+        %h4 Check out more of our excellent reviews:
+        %iframe{allowtransparency: "true", frameborder: "0", height: "100", src: "https://www.massagebook.com/reviewspublic/button/651016", width: "165", class: "framed"}
+        .yelp#yelp-biz-badge-rrc-tAbrlMFDM64AD48pZBrAkg
+          %a{href: "http://yelp.com/biz/married-to-massage-sacramento"}
+            %img{alt:"Married to Massage", src:"http://dyn.yelpcdn.com/extimg/en_US/rrc/tAbrlMFDM64AD48pZBrAkg.png", height:"55", width:"125", style:"width: 125px; margin-left: 12px;"}
 
     %article.column-right
       .formContainer

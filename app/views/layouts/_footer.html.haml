@@ -23,15 +23,17 @@
     %span{itemprop: "copyright"} © 2015
     %span{itemprop: "name"} Married to Massage
     %span.mobile-hide &#124;
+    %span=link_to "Privacy Policy", privacy_policy_path
+    %span.mobile-hide &#124;
+    -# %span=link_to "Site Map", "/sitemap.xml"
+    -# %span.mobile-hide &#124;
     %div{itemprop: "address", itemscope: "", itemtype: "http://schema.org/PostalAddress", class: "inline-block"}
       %span{itemprop: "streetAddress"} 902 21st St
-      &#44;
+      %span.mobile-hide &#124;
       %span{itemprop: "addressLocality"} Sacramento
       %span{itemprop: "addressRegion"} CA
       %span{itemprop: "postalCode"} 95811
       %span.mobile-hide &#124;
     %span{itemprop: "telephone"} 916-467-4325
-    %span.mobile-hide &#124;
-  -# %span=link_to "Site Map", "/sitemap.xml"
-  -# %span.mobile-hide &#124;
-  %span=link_to "Privacy Policy", privacy_policy_path
+    -# %span.mobile-hide &#124;
+
