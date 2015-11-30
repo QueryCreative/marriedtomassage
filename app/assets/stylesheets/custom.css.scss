@@ -1497,24 +1497,21 @@ nav.share {
 }
 
 .mobile-hide {
-  display: initial;
   @media screen and (max-width: 520px) {
-    display: none;
+    display: none !important;
   }
 }
 
 .mobile-show {
-  display: none;
-  @media screen and (max-width: 520px) {
-    display: initial;
+  @media screen and (min-width: 521px) {
+    display: none !important;
   }
 }
 
-
 .about {
   .ima-logo {
-      width: 125px;
-    }
+    width: 125px;
+  }
 }
 
 #Carpal-Tunnel {

@@ -1,4 +1,15 @@
 - provide(:title, 'Testimonials')
+
+#fb-root
+:javascript
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=679634962081264";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
 #News#Testimonials
   %section.clearfix{role: "top"}
     %article.column-left
@@ -21,6 +32,9 @@
         .yelp#yelp-biz-badge-rrc-tAbrlMFDM64AD48pZBrAkg
           %a{href: "http://yelp.com/biz/married-to-massage-sacramento"}
             %img{alt:"Married to Massage", src:"http://dyn.yelpcdn.com/extimg/en_US/rrc/tAbrlMFDM64AD48pZBrAkg.png", height:"55", width:"125", style:"width: 125px; margin-left: 12px;"}
+
+        .fb-comments.mobile-hide{ "data-href" => "http://localhost:4400/testimonials", "data-numposts" => "3", "data-width" => "480"}
+        .fb-comments.mobile-show{ "data-href" => "http://localhost:4400/testimonials", "data-numposts" => "3", "data-width" => "280"}
 
     %article.column-right
       .formContainer
