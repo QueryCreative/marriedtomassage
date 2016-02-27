@@ -32,6 +32,7 @@ Rails.application.routes.draw do
   get 'deeptissue' => 'main_pages#deeptissue'
   get 'chair-massage' => 'main_pages#chair-massage'
   get 'frozen-shoulder' => 'main_pages#frozen-shoulder'
+  get 'runners-knee' => 'main_pages#runners-knee'
   get 'plantar-fasciitis' => 'main_pages#plantar-fasciitis'
   get 'elbow' => 'main_pages#elbow'
   get 'carpal-tunnel' => 'main_pages#carpal-tunnel'
